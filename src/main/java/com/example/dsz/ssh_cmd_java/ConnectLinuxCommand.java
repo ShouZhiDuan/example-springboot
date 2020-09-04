@@ -1,4 +1,4 @@
-package com.example.dsz.test_pem;
+package com.example.dsz.ssh_cmd_java;
 
 
 import ch.ethz.ssh2.Connection;
@@ -8,10 +8,8 @@ import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.StringUtils;
 
-import javax.sound.midi.Soundbank;
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
