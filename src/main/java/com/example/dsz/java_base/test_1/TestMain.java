@@ -1,6 +1,6 @@
-package com.example.dsz.test.test_1;
+package com.example.dsz.java_base.test_1;
 
-import com.example.dsz.test.PublicTest;
+import com.example.dsz.java_base.PublicTest;
 
 /**
  * @Auther: ShouZhi@Duan

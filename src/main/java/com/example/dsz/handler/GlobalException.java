@@ -14,12 +14,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class GlobalException extends RuntimeException {
-    private Integer code;
-    private String msg;
-    //构建异常实例数据
-
-    public GlobalException(GlobalExceptionCodeEnum globalExceptionCodeEnum) {
-        this.code = globalExceptionCodeEnum.getCode();
-        this.msg = globalExceptionCodeEnum.getMsg();
-    }
+    private GlobalExceptionCodeEnum globalExceptionCodeEnum;
 }

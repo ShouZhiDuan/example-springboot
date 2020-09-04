@@ -1,6 +1,4 @@
-package com.example.dsz.thread_demo;
-
-import org.springframework.util.StringUtils;
+package com.example.dsz.thread.demo;
 
 import java.util.concurrent.*;
 

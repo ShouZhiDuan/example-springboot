@@ -1,4 +1,4 @@
-package com.example.dsz.chain_demo;
+package com.example.dsz.thread.zen_ren_lian_thread;
 
 import com.alibaba.fastjson.JSON;
 import lombok.SneakyThrows;
@@ -12,18 +12,14 @@ import java.util.concurrent.LinkedBlockingQueue;
  * @Date: 2020/9/3 17:23
  * @Description:
  */
-public class SelfAuth extends Thread implements IVacateAuth {
+public class Teacher1Auth extends Thread implements IVacateAuth {
     //阻塞队列
     LinkedBlockingQueue<Vacate> deque=new LinkedBlockingQueue<>();
 
     private IVacateAuth iVacateAuth;
 
-    public SelfAuth(IVacateAuth iVacateAuth){
+    public Teacher1Auth(IVacateAuth iVacateAuth){
         this.iVacateAuth = iVacateAuth;
-    }
-
-    public SelfAuth(){
-
     }
 
     @SneakyThrows
@@ -31,9 +27,9 @@ public class SelfAuth extends Thread implements IVacateAuth {
     public void run() {
         while (true){
               Vacate take = deque.take();
-              take.setDesc("======我要开始写假条请假了======");
+              take.setDesc("======1号老师审批，通过======");
               take.setTxt("======我要请假回家======");
-              take.setResult(false);
+              take.setResult(true);
               take.setTime(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
               System.out.println("我的请假条：" + JSON.toJSONString(take));
               iVacateAuth.next(take);
@@ -42,6 +38,6 @@ public class SelfAuth extends Thread implements IVacateAuth {
 
     @Override
     public void next(Vacate vacate) {
-          this.deque.add(vacate);
+        this.deque.add(vacate);
     }
 }

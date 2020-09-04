@@ -1,4 +1,4 @@
-package com.example.dsz.test;
+package com.example.dsz.java_base;
 
 /**
  * @Auther: ShouZhi@Duan

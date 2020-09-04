@@ -1,8 +1,7 @@
-package com.example.dsz.test.test_2;
+package com.example.dsz.java_base.test_2;
 
 import com.example.dsz.utils.DszBeanUtils;
 import lombok.Data;
-import org.springframework.beans.BeanUtils;
 
 /**
  * @Auther: ShouZhi@Duan

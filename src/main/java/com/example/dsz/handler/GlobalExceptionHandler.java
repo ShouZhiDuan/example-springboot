@@ -1,5 +1,6 @@
 package com.example.dsz.handler;
 
+import com.example.dsz.base.SkadiResult;
 import com.example.dsz.enums.GlobalExceptionCodeEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.CollectionUtils;
@@ -73,7 +74,7 @@ public class GlobalExceptionHandler {
     }
 
     private SkadiResult<Object> response(GlobalException exceptionEnum) {
-        return  responseValidate(exceptionEnum.getCode(),exceptionEnum.getMsg());
+        return  responseValidate(exceptionEnum.getGlobalExceptionCodeEnum().getCode(),exceptionEnum.getGlobalExceptionCodeEnum().getMsg());
     }
 
     private SkadiResult<Object> responseValidate(Integer code, String msg) {

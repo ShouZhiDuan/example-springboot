@@ -1,4 +1,4 @@
-package com.example.dsz.chain_demo;
+package com.example.dsz.thread.zen_ren_lian_thread;
 
 /**
  * @Auther: ShouZhi@Duan

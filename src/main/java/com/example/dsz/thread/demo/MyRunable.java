@@ -1,4 +1,4 @@
-package com.example.dsz.thread_demo;
+package com.example.dsz.thread.demo;
 
 /**
  * @Auther: ShouZhi@Duan
