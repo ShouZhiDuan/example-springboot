@@ -36,6 +36,4 @@ public class DemoTestSpringbootApplication {
         SpringApplication.run(DemoTestSpringbootApplication.class, args);
     }
 
-
-
 }
