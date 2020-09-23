@@ -15,6 +15,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/exe")
 public class ExceptionController {
 
+    @GetMapping("/hello")
+    private Object hello(){
+        return  "你好，段守志！！！！！！";
+    }
+
     @GetMapping("/test")
     private void test(){
              test2();
