@@ -1,17 +1,19 @@
 package com.example.dsz;
 
-import org.apache.catalina.connector.Connector;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
-import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
-import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class DemoTestSpringbootApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(DemoTestSpringbootApplication.class, args);
+    }
+}
 
-    //下面是2.0的配置，1.x请搜索对应的设置
+/**
+ * https配置
+ */
+//下面是2.0的配置，1.x请搜索对应的设置
 //    @Bean
 //    public ServletWebServerFactory servletContainer() {
 //        TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory();
@@ -28,12 +30,3 @@ public class DemoTestSpringbootApplication {
 //        connector.setRedirectPort(443);
 //        return connector;
 //    }
-
-    /**
-     * SpringBoot启动类
-     */
-    public static void main(String[] args) {
-        SpringApplication.run(DemoTestSpringbootApplication.class, args);
-    }
-
-}
