@@ -10,9 +10,9 @@
     </parent>
 
     <groupId>com.example.dsz</groupId>
-    <artifactId>demo-test-springboot</artifactId>
+    <artifactId>example-springboot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo-test-springboot</name>
+    <name>example-springboot</name>
     <description>Demo project for Spring Boot</description>
     <modelVersion>4.0.0</modelVersion>
 
@@ -90,6 +90,12 @@
         <dependency>
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
+        </dependency>
+        <!--apache commons codec-->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.9</version>
         </dependency>
     </dependencies>
 
