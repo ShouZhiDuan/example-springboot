@@ -42,6 +42,9 @@ public class DszBeanUtils implements ApplicationContextAware {
         return emptyNames.toArray(result);
     }
 
+    /**
+     * 过滤为空的字段就不赋值
+     */
     public static void copyPropertiesIgnoreNull(Object src, Object target){
         BeanUtils.copyProperties(src, target, getNullPropertyNames(src));
     }

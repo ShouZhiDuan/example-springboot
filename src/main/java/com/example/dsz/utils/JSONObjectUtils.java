@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  * @Date: 2020/8/20 13:18
  * @Description:对象序列化工具
  */
-public class JsonObjectUtils {
+public class JSONObjectUtils {
 
     private  static  final ObjectMapper MAPPER = new ObjectMapper();
 
