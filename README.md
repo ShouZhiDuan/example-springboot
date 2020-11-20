@@ -8,3 +8,4 @@
 ### 6、ssh远程CMD执行案例。
 ### 7、spring-boot实现本地https。
 ### 8、java 执行shell脚本
+### 9、@Valid(javax)和@Validated(spring)分组校验
