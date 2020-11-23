@@ -26,4 +26,11 @@ public class ReadFileTest {
     }
 
 
+    @Test
+    public void test2(){
+        Byte by = 0;
+        System.out.println(by==0);
+    }
+
+
 }
