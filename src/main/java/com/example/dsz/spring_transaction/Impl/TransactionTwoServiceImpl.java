@@ -16,6 +16,24 @@ public class TransactionTwoServiceImpl implements TransactionTwoService {
     @Override
     @Transactional(propagation=Propagation.MANDATORY)
     public void test2() {
-        System.out.println("com.example.dsz.spring_transaction.Impl.TransactionTwoServiceImpl#test2");
+        System.out.println("@Transactional(propagation=Propagation.MANDATORY)");
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public void test3() {
+        System.out.println("@Transactional(propagation = Propagation.REQUIRED)");
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.SUPPORTS)
+    public void test4() {
+        System.out.println("@Transactional(propagation = Propagation.SUPPORTS)");
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
+    public void test5() {
+        System.out.println("@Transactional(propagation = Propagation.REQUIRES_NEW)");
     }
 }

@@ -6,5 +6,10 @@ package com.example.dsz.spring_transaction.service;
  * @Description:
  */
 public interface TransactionTwoService {
-    void  test2();
+    void test2();
+    void test3();
+
+    void test4();
+
+    void test5();
 }

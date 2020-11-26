@@ -18,15 +18,11 @@ import org.springframework.transaction.annotation.Transactional;
 public class TransactionOneServiceImpl implements TransactionOneService {
 
     @Autowired
-    private  TransactionOneService transactionOneService;
-
-    @Autowired
     private TransactionTwoService transactionTwoService;
 
     @Override
     public void test1() {
         System.out.println("test1");
-        //transactionOneService.test2();
         transactionTwoService.test2();
     }
 
@@ -34,5 +30,25 @@ public class TransactionOneServiceImpl implements TransactionOneService {
     @Transactional(propagation = Propagation.MANDATORY)
     public void test2() {
         System.out.println("com.example.dsz.spring_transaction.Impl.TransactionOneServiceImpl#test2");
+    }
+
+
+    @Override
+    @Transactional//如果这里开启了事务，那么transactionTwoService.test3()将不会开启事务，公用当前的事务管理。反之自己开启事务给自己。
+    public void test3() {
+        System.out.println("com.example.dsz.spring_transaction.Impl.TransactionOneServiceImpl.test3");
+        transactionTwoService.test3();
+    }
+
+    @Override
+    @Transactional
+    public void test4() {
+        transactionTwoService.test4();
+    }
+
+    @Override
+    @Transactional
+    public void test5() {
+        transactionTwoService.test5();
     }
 }
