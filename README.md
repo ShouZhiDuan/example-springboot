@@ -9,3 +9,7 @@
 ### 7、spring-boot实现本地https。
 ### 8、java 执行shell脚本
 ### 9、@Valid(javax)和@Validated(spring)分组校验 顺序验证 嵌套验证等
+### 10、Spring事务原理分析
+### 11、spring事务的传播属性分析
+### 12、Mybatis逆向工程集成
+### 13、TkMapper集成
