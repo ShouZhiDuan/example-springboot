@@ -17,9 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class TransactionalController {
     @Autowired
     private TransactionOneService transactionOneService;
-    @Autowired
-    private TransactionTwoService transactionTwoService;
-
 
     @GetMapping
     public Object test1(){
