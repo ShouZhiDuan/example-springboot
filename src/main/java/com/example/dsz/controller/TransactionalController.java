@@ -19,6 +19,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("tran")
 public class TransactionalController {
+
+    @Autowired
+    private DszTestMapper dszTestMapper;
+
     @Autowired
     private TransactionOneService transactionOneService;
 
@@ -129,9 +133,6 @@ public class TransactionalController {
         transactionOneService.test8();
         return "success";
     }
-
-    @Autowired
-    private DszTestMapper dszTestMapper;
 
     /**
      * 测试如果@Transactional放在Controller是否支持事务回滚
