@@ -36,4 +36,22 @@ public class TransactionTwoServiceImpl implements TransactionTwoService {
     public void test5() {
         System.out.println("@Transactional(propagation = Propagation.REQUIRES_NEW)");
     }
+
+    @Override
+    @Transactional(propagation = Propagation.NOT_SUPPORTED)
+    public void test6() {
+        System.out.println("@Transactional(propagation = Propagation.NOT_SUPPORTED)");
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.NEVER)
+    public void test7() {
+        System.out.println("@Transactional(propagation = Propagation.NEVER)");
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.NESTED)
+    public void test8() {
+        System.out.println("@Transactional(propagation = Propagation.NESTED)");
+    }
 }

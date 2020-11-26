@@ -51,4 +51,22 @@ public class TransactionOneServiceImpl implements TransactionOneService {
     public void test5() {
         transactionTwoService.test5();
     }
+
+    @Override
+    @Transactional
+    public void test6() {
+        transactionTwoService.test6();
+    }
+
+    @Override
+    @Transactional
+    public void test7() {
+        transactionTwoService.test7();
+    }
+
+
+    @Override
+    public void test8() {
+        transactionTwoService.test8();
+    }
 }
