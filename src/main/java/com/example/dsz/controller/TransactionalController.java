@@ -1,7 +1,6 @@
 package com.example.dsz.controller;
 
 import com.example.dsz.spring_transaction.service.TransactionOneService;
-import com.example.dsz.spring_transaction.service.TransactionTwoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
