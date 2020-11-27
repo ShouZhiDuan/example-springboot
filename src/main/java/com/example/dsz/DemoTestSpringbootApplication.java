@@ -1,13 +1,17 @@
 package com.example.dsz;
 
+import com.alibaba.fastjson.JSON;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import tk.mybatis.spring.annotation.MapperScan;
 
+@Slf4j
 @MapperScan("com.example.dsz.mapper")
 @SpringBootApplication
 public class DemoTestSpringbootApplication {
     public static void main(String[] args) {
+        log.info("主程序参数列表：" + JSON.toJSONString(args));
         SpringApplication.run(DemoTestSpringbootApplication.class, args);
     }
 }
