@@ -62,7 +62,6 @@
         <table tableName="question_options"></table>
         <table tableName="questions"></table>
         -->
-        <table tableName="dsz_test"></table>
-        <table tableName="my_isam_test"></table>
+        <table tableName="fudan_hpos"></table>
     </context>
 </generatorConfiguration>
