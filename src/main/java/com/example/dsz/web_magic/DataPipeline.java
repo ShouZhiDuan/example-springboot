@@ -32,16 +32,19 @@ public class DataPipeline implements Pipeline {
     @Override
     @Transactional
     public void process(ResultItems resultItems, Task task) {
-         List<FudanHpos> list = new ArrayList<>();
          String[] hpos = resultItems.get("hpos");
          for (String hpo : hpos){
              if (hpo.contains("HP:")){
                  FudanHpos fudanHpos = new FudanHpos();
                  fudanHpos.setHpoName(hpo);
-                 list.add(fudanHpos);
+                 try {
+                     hposMapper.insert(fudanHpos);
+                 } catch (Exception e) {
+                     log.info("库中已存在：" + hpo);
+                 }
              }
          }
-         hposMapper.insertList(list);
+
     }
 
 }
