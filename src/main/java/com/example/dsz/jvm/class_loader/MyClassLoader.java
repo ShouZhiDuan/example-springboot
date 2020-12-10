@@ -50,7 +50,7 @@ public class MyClassLoader  extends ClassLoader{
     /**
      * 测试
      */
-    public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
+    public static void main(String[] args) throws Exception {
         MyClassLoader myClassLoader = new MyClassLoader();
         myClassLoader.setRoot("E:\\temp");
         Class<?> aClass = myClassLoader.loadClass("test_pack.TestLoader");
