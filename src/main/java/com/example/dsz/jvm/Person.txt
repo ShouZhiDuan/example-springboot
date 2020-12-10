@@ -1,120 +1,135 @@
 Classfile /E:/dsz-git-work/example-springboot/src/main/java/com/example/dsz/jvm/Person.class
-  Last modified 2020年12月10日; size 1525 bytes
-  MD5 checksum 247ef158e61e6fa5929b250c7569fd5c
+  Last modified 2020年12月10日; size 1702 bytes
+  MD5 checksum ea55da63aef3787e37b35dd6002acebe
   Compiled from "Person.java"
 public class com.example.dsz.jvm.Person
   minor version: 0
   major version: 55
   flags: (0x0021) ACC_PUBLIC, ACC_SUPER
-  this_class: #12                         // com/example/dsz/jvm/Person
-  super_class: #15                        // java/lang/Object
+  this_class: #15                         // com/example/dsz/jvm/Person
+  super_class: #19                        // java/lang/Object
   interfaces: 0, fields: 9, methods: 17, attributes: 1
 Constant pool:
-   #1 = Methodref          #15.#54        // java/lang/Object."<init>":()V
-   #2 = Fieldref           #12.#55        // com/example/dsz/jvm/Person.age1:I
-   #3 = String             #56            // duanshouzhi
-   #4 = Fieldref           #12.#57        // com/example/dsz/jvm/Person.name1:Ljava/lang/String;
-   #5 = String             #58            // shenfen
-   #6 = Fieldref           #12.#59        // com/example/dsz/jvm/Person.province:Ljava/lang/String;
-   #7 = Fieldref           #12.#60        // com/example/dsz/jvm/Person.city:Ljava/lang/String;
-   #8 = Fieldref           #12.#61        // com/example/dsz/jvm/Person.age:I
-   #9 = Fieldref           #12.#62        // com/example/dsz/jvm/Person.name:Ljava/lang/String;
-  #10 = Fieldref           #12.#63        // com/example/dsz/jvm/Person.banji:Ljava/lang/String;
-  #11 = Fieldref           #12.#64        // com/example/dsz/jvm/Person.school:Ljava/lang/String;
-  #12 = Class              #65            // com/example/dsz/jvm/Person
-  #13 = String             #66            // zhuzhi
-  #14 = String             #67            // xuexiao
-  #15 = Class              #68            // java/lang/Object
-  #16 = Utf8               age
-  #17 = Utf8               I
-  #18 = Utf8               age1
-  #19 = Utf8               name
-  #20 = Utf8               Ljava/lang/String;
-  #21 = Utf8               name1
-  #22 = Utf8               banji
-  #23 = Utf8               school
-  #24 = Utf8               addr
-  #25 = Utf8               ConstantValue
-  #26 = Utf8               city
-  #27 = Utf8               province
-  #28 = Utf8               <init>
-  #29 = Utf8               (Ljava/lang/String;)V
-  #30 = Utf8               Code
-  #31 = Utf8               LineNumberTable
-  #32 = Utf8               getAge
-  #33 = Utf8               ()I
-  #34 = Utf8               setAge
-  #35 = Utf8               (I)V
-  #36 = Utf8               getAge1
-  #37 = Utf8               setAge1
-  #38 = Utf8               getName
-  #39 = Utf8               ()Ljava/lang/String;
-  #40 = Utf8               setName
-  #41 = Utf8               getName1
-  #42 = Utf8               setName1
-  #43 = Utf8               getBanji
-  #44 = Utf8               setBanji
-  #45 = Utf8               getSchool
-  #46 = Utf8               setSchool
-  #47 = Utf8               getAddr
-  #48 = Utf8               getCity
-  #49 = Utf8               getProvince
-  #50 = Utf8               <clinit>
-  #51 = Utf8               ()V
-  #52 = Utf8               SourceFile
-  #53 = Utf8               Person.java
-  #54 = NameAndType        #28:#51        // "<init>":()V
-  #55 = NameAndType        #18:#17        // age1:I
-  #56 = Utf8               duanshouzhi
-  #57 = NameAndType        #21:#20        // name1:Ljava/lang/String;
-  #58 = Utf8               shenfen
-  #59 = NameAndType        #27:#20        // province:Ljava/lang/String;
-  #60 = NameAndType        #26:#20        // city:Ljava/lang/String;
-  #61 = NameAndType        #16:#17        // age:I
-  #62 = NameAndType        #19:#20        // name:Ljava/lang/String;
-  #63 = NameAndType        #22:#20        // banji:Ljava/lang/String;
-  #64 = NameAndType        #23:#20        // school:Ljava/lang/String;
-  #65 = Utf8               com/example/dsz/jvm/Person
-  #66 = Utf8               zhuzhi
-  #67 = Utf8               xuexiao
-  #68 = Utf8               java/lang/Object
+   #1 = Methodref          #19.#58        // java/lang/Object."<init>":()V
+   #2 = Fieldref           #15.#59        // com/example/dsz/jvm/Person.age1:I
+   #3 = String             #60            // duanshouzhi
+   #4 = Fieldref           #15.#61        // com/example/dsz/jvm/Person.name1:Ljava/lang/String;
+   #5 = String             #62            // shenfen
+   #6 = Fieldref           #15.#63        // com/example/dsz/jvm/Person.province:Ljava/lang/String;
+   #7 = Fieldref           #64.#65        // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = String             #66            // un static block
+   #9 = Methodref          #67.#68        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #10 = Fieldref           #15.#69        // com/example/dsz/jvm/Person.city:Ljava/lang/String;
+  #11 = Fieldref           #15.#70        // com/example/dsz/jvm/Person.age:I
+  #12 = Fieldref           #15.#71        // com/example/dsz/jvm/Person.name:Ljava/lang/String;
+  #13 = Fieldref           #15.#72        // com/example/dsz/jvm/Person.banji:Ljava/lang/String;
+  #14 = Fieldref           #15.#73        // com/example/dsz/jvm/Person.school:Ljava/lang/String;
+  #15 = Class              #74            // com/example/dsz/jvm/Person
+  #16 = String             #75            // zhuzhi
+  #17 = String             #76            // xuexiao
+  #18 = String             #77            // is static block
+  #19 = Class              #78            // java/lang/Object
+  #20 = Utf8               age
+  #21 = Utf8               I
+  #22 = Utf8               age1
+  #23 = Utf8               name
+  #24 = Utf8               Ljava/lang/String;
+  #25 = Utf8               name1
+  #26 = Utf8               banji
+  #27 = Utf8               school
+  #28 = Utf8               addr
+  #29 = Utf8               ConstantValue
+  #30 = Utf8               city
+  #31 = Utf8               province
+  #32 = Utf8               <init>
+  #33 = Utf8               (Ljava/lang/String;)V
+  #34 = Utf8               Code
+  #35 = Utf8               LineNumberTable
+  #36 = Utf8               getAge
+  #37 = Utf8               ()I
+  #38 = Utf8               setAge
+  #39 = Utf8               (I)V
+  #40 = Utf8               getAge1
+  #41 = Utf8               setAge1
+  #42 = Utf8               getName
+  #43 = Utf8               ()Ljava/lang/String;
+  #44 = Utf8               setName
+  #45 = Utf8               getName1
+  #46 = Utf8               setName1
+  #47 = Utf8               getBanji
+  #48 = Utf8               setBanji
+  #49 = Utf8               getSchool
+  #50 = Utf8               setSchool
+  #51 = Utf8               getAddr
+  #52 = Utf8               getCity
+  #53 = Utf8               getProvince
+  #54 = Utf8               <clinit>
+  #55 = Utf8               ()V
+  #56 = Utf8               SourceFile
+  #57 = Utf8               Person.java
+  #58 = NameAndType        #32:#55        // "<init>":()V
+  #59 = NameAndType        #22:#21        // age1:I
+  #60 = Utf8               duanshouzhi
+  #61 = NameAndType        #25:#24        // name1:Ljava/lang/String;
+  #62 = Utf8               shenfen
+  #63 = NameAndType        #31:#24        // province:Ljava/lang/String;
+  #64 = Class              #79            // java/lang/System
+  #65 = NameAndType        #80:#81        // out:Ljava/io/PrintStream;
+  #66 = Utf8               un static block
+  #67 = Class              #82            // java/io/PrintStream
+  #68 = NameAndType        #83:#33        // println:(Ljava/lang/String;)V
+  #69 = NameAndType        #30:#24        // city:Ljava/lang/String;
+  #70 = NameAndType        #20:#21        // age:I
+  #71 = NameAndType        #23:#24        // name:Ljava/lang/String;
+  #72 = NameAndType        #26:#24        // banji:Ljava/lang/String;
+  #73 = NameAndType        #27:#24        // school:Ljava/lang/String;
+  #74 = Utf8               com/example/dsz/jvm/Person
+  #75 = Utf8               zhuzhi
+  #76 = Utf8               xuexiao
+  #77 = Utf8               is static block
+  #78 = Utf8               java/lang/Object
+  #79 = Utf8               java/lang/System
+  #80 = Utf8               out
+  #81 = Utf8               Ljava/io/PrintStream;
+  #82 = Utf8               java/io/PrintStream
+  #83 = Utf8               println
 {
-  private int age;
+  public int age;
     descriptor: I
-    flags: (0x0002) ACC_PRIVATE
+    flags: (0x0001) ACC_PUBLIC
 
-  private int age1;
+  public int age1;
     descriptor: I
-    flags: (0x0002) ACC_PRIVATE
+    flags: (0x0001) ACC_PUBLIC
 
-  private java.lang.String name;
+  public java.lang.String name;
     descriptor: Ljava/lang/String;
-    flags: (0x0002) ACC_PRIVATE
+    flags: (0x0001) ACC_PUBLIC
 
-  private java.lang.String name1;
+  public java.lang.String name1;
     descriptor: Ljava/lang/String;
-    flags: (0x0002) ACC_PRIVATE
+    flags: (0x0001) ACC_PUBLIC
 
-  private static java.lang.String banji;
+  public static java.lang.String banji;
     descriptor: Ljava/lang/String;
-    flags: (0x000a) ACC_PRIVATE, ACC_STATIC
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
 
-  private static java.lang.String school;
+  public static java.lang.String school;
     descriptor: Ljava/lang/String;
-    flags: (0x000a) ACC_PRIVATE, ACC_STATIC
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
 
-  private static final java.lang.String addr;
+  public static final java.lang.String addr;
     descriptor: Ljava/lang/String;
-    flags: (0x001a) ACC_PRIVATE, ACC_STATIC, ACC_FINAL
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
     ConstantValue: String zhuzhi
 
-  private final java.lang.String city;
+  public final java.lang.String city;
     descriptor: Ljava/lang/String;
-    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
 
-  private final java.lang.String province;
+  public final java.lang.String province;
     descriptor: Ljava/lang/String;
-    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
     ConstantValue: String shenfen
 
   public com.example.dsz.jvm.Person(java.lang.String);
@@ -133,17 +148,21 @@ Constant pool:
         16: aload_0
         17: ldc           #5                  // String shenfen
         19: putfield      #6                  // Field province:Ljava/lang/String;
-        22: aload_0
-        23: aload_1
-        24: putfield      #7                  // Field city:Ljava/lang/String;
-        27: return
+        22: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        25: ldc           #8                  // String un static block
+        27: invokevirtual #9                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        30: aload_0
+        31: aload_1
+        32: putfield      #10                 // Field city:Ljava/lang/String;
+        35: return
       LineNumberTable:
-        line 19: 0
+        line 28: 0
         line 10: 4
         line 12: 10
         line 17: 16
         line 20: 22
-        line 21: 27
+        line 29: 30
+        line 30: 35
 
   public int getAge();
     descriptor: ()I
@@ -151,10 +170,10 @@ Constant pool:
     Code:
       stack=1, locals=1, args_size=1
          0: aload_0
-         1: getfield      #8                  // Field age:I
+         1: getfield      #11                 // Field age:I
          4: ireturn
       LineNumberTable:
-        line 24: 0
+        line 33: 0
 
   public void setAge(int);
     descriptor: (I)V
@@ -163,11 +182,11 @@ Constant pool:
       stack=2, locals=2, args_size=2
          0: aload_0
          1: iload_1
-         2: putfield      #8                  // Field age:I
+         2: putfield      #11                 // Field age:I
          5: return
       LineNumberTable:
-        line 28: 0
-        line 29: 5
+        line 37: 0
+        line 38: 5
 
   public int getAge1();
     descriptor: ()I
@@ -178,7 +197,7 @@ Constant pool:
          1: getfield      #2                  // Field age1:I
          4: ireturn
       LineNumberTable:
-        line 32: 0
+        line 41: 0
 
   public void setAge1(int);
     descriptor: (I)V
@@ -190,8 +209,8 @@ Constant pool:
          2: putfield      #2                  // Field age1:I
          5: return
       LineNumberTable:
-        line 36: 0
-        line 37: 5
+        line 45: 0
+        line 46: 5
 
   public java.lang.String getName();
     descriptor: ()Ljava/lang/String;
@@ -199,10 +218,10 @@ Constant pool:
     Code:
       stack=1, locals=1, args_size=1
          0: aload_0
-         1: getfield      #9                  // Field name:Ljava/lang/String;
+         1: getfield      #12                 // Field name:Ljava/lang/String;
          4: areturn
       LineNumberTable:
-        line 40: 0
+        line 49: 0
 
   public void setName(java.lang.String);
     descriptor: (Ljava/lang/String;)V
@@ -211,11 +230,11 @@ Constant pool:
       stack=2, locals=2, args_size=2
          0: aload_0
          1: aload_1
-         2: putfield      #9                  // Field name:Ljava/lang/String;
+         2: putfield      #12                 // Field name:Ljava/lang/String;
          5: return
       LineNumberTable:
-        line 44: 0
-        line 45: 5
+        line 53: 0
+        line 54: 5
 
   public java.lang.String getName1();
     descriptor: ()Ljava/lang/String;
@@ -226,7 +245,7 @@ Constant pool:
          1: getfield      #4                  // Field name1:Ljava/lang/String;
          4: areturn
       LineNumberTable:
-        line 48: 0
+        line 57: 0
 
   public void setName1(java.lang.String);
     descriptor: (Ljava/lang/String;)V
@@ -238,18 +257,18 @@ Constant pool:
          2: putfield      #4                  // Field name1:Ljava/lang/String;
          5: return
       LineNumberTable:
-        line 52: 0
-        line 53: 5
+        line 61: 0
+        line 62: 5
 
   public static java.lang.String getBanji();
     descriptor: ()Ljava/lang/String;
     flags: (0x0009) ACC_PUBLIC, ACC_STATIC
     Code:
       stack=1, locals=0, args_size=0
-         0: getstatic     #10                 // Field banji:Ljava/lang/String;
+         0: getstatic     #13                 // Field banji:Ljava/lang/String;
          3: areturn
       LineNumberTable:
-        line 56: 0
+        line 65: 0
 
   public static void setBanji(java.lang.String);
     descriptor: (Ljava/lang/String;)V
@@ -257,21 +276,21 @@ Constant pool:
     Code:
       stack=1, locals=1, args_size=1
          0: aload_0
-         1: putstatic     #10                 // Field banji:Ljava/lang/String;
+         1: putstatic     #13                 // Field banji:Ljava/lang/String;
          4: return
       LineNumberTable:
-        line 60: 0
-        line 61: 4
+        line 69: 0
+        line 70: 4
 
   public static java.lang.String getSchool();
     descriptor: ()Ljava/lang/String;
     flags: (0x0009) ACC_PUBLIC, ACC_STATIC
     Code:
       stack=1, locals=0, args_size=0
-         0: getstatic     #11                 // Field school:Ljava/lang/String;
+         0: getstatic     #14                 // Field school:Ljava/lang/String;
          3: areturn
       LineNumberTable:
-        line 64: 0
+        line 73: 0
 
   public static void setSchool(java.lang.String);
     descriptor: (Ljava/lang/String;)V
@@ -279,21 +298,21 @@ Constant pool:
     Code:
       stack=1, locals=1, args_size=1
          0: aload_0
-         1: putstatic     #11                 // Field school:Ljava/lang/String;
+         1: putstatic     #14                 // Field school:Ljava/lang/String;
          4: return
       LineNumberTable:
-        line 68: 0
-        line 69: 4
+        line 77: 0
+        line 78: 4
 
   public static java.lang.String getAddr();
     descriptor: ()Ljava/lang/String;
     flags: (0x0009) ACC_PUBLIC, ACC_STATIC
     Code:
       stack=1, locals=0, args_size=0
-         0: ldc           #13                 // String zhuzhi
+         0: ldc           #16                 // String zhuzhi
          2: areturn
       LineNumberTable:
-        line 72: 0
+        line 81: 0
 
   public java.lang.String getCity();
     descriptor: ()Ljava/lang/String;
@@ -301,10 +320,10 @@ Constant pool:
     Code:
       stack=1, locals=1, args_size=1
          0: aload_0
-         1: getfield      #7                  // Field city:Ljava/lang/String;
+         1: getfield      #10                 // Field city:Ljava/lang/String;
          4: areturn
       LineNumberTable:
-        line 76: 0
+        line 85: 0
 
   public java.lang.String getProvince();
     descriptor: ()Ljava/lang/String;
@@ -314,17 +333,22 @@ Constant pool:
          0: ldc           #5                  // String shenfen
          2: areturn
       LineNumberTable:
-        line 80: 0
+        line 89: 0
 
   static {};
     descriptor: ()V
     flags: (0x0008) ACC_STATIC
     Code:
-      stack=1, locals=0, args_size=0
-         0: ldc           #14                 // String xuexiao
-         2: putstatic     #11                 // Field school:Ljava/lang/String;
-         5: return
+      stack=2, locals=0, args_size=0
+         0: ldc           #17                 // String xuexiao
+         2: putstatic     #14                 // Field school:Ljava/lang/String;
+         5: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         8: ldc           #18                 // String is static block
+        10: invokevirtual #9                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        13: return
       LineNumberTable:
         line 14: 0
+        line 24: 5
+        line 25: 13
 }
 SourceFile: "Person.java"

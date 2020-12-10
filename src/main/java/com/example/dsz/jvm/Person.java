@@ -6,15 +6,26 @@ package com.example.dsz.jvm;
  * @Description:
  */
 public class Person {
-    private int age;
-    private int age1 = 10;
-    private String name;
-    private String name1 = "duanshouzhi";
-    private static String banji;
-    private static String school = "xuexiao";
-    private final static String addr = "zhuzhi";
-    private final String city;
-    private final String province = "shenfen";
+    public int age;
+    public int age1 = 10;
+    public String name;
+    public String name1 = "duanshouzhi";
+    public static String banji;
+    public static String school = "xuexiao";
+    public final static String addr = "zhuzhi";
+    public final String city;
+    public final String province = "shenfen";
+
+    {
+        //只有实例化的时候被加载
+        System.out.println("un static block");
+    }
+
+    static  {
+        //实例化或者初始化的时候都会被加载
+        System.out.println("is static block");
+    }
+
 
     public Person(String city) {
         this.city = city;
