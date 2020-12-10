@@ -55,6 +55,7 @@ public class MyClassLoader  extends ClassLoader{
         myClassLoader.setRoot("E:\\temp");
         Class<?> aClass = myClassLoader.loadClass("test_pack.TestLoader");
         Method testDo = aClass.getMethod("main", String[].class);
+        //注意这里调用main函数传入的string[]参数要转换成一个整体，否则会当期做多个参数拆开传入，出现wrong number of arguments
         testDo.invoke(null,(Object)new String[]{"123", "456"});
         System.out.println();
     }
