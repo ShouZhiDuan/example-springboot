@@ -6,10 +6,10 @@ package com.example.dsz.jvm;
  * @Description:
  */
 public class Person {
-    public int age;
-    public int age1 = 10;
-    public String name;
-    public String name1 = "duanshouzhi";
+    public int age;//实例变量
+    public int age1 = 10;//实例变量
+    public String name;//实例变量
+    public String name1 = "duanshouzhi";//常量
     public static String banji;
     public static String school = "xuexiao";
     public final static String addr = "zhuzhi";
@@ -89,5 +89,20 @@ public class Person {
 
     public String getProvince() {
         return province;
+    }
+
+    public static void main(String[] args) {
+        /**
+         * 字符串常量 to see https://www.cnblogs.com/niew/p/9597379.html
+         * 基本数据包装类型常量
+         * 类信息字面量常量、静态数据、final常量
+         */
+         String a = "test";
+         String b = "test";
+         String c = new String("test");
+         String d = new String("test");
+         System.out.println(a==b);
+         System.out.println(a==c);
+         System.out.println(c==d);
     }
 }
