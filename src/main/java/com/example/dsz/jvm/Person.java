@@ -97,12 +97,30 @@ public class Person {
          * 基本数据包装类型常量
          * 类信息字面量常量、静态数据、final常量
          */
-         String a = "test";
-         String b = "test";
-         String c = new String("test");
-         String d = new String("test");
-         System.out.println(a==b);
-         System.out.println(a==c);
-         System.out.println(c==d);
+//         String a = "test";
+//         String b = "test";
+//         String c = new String("test");
+//         String d = new String("test");
+//         System.out.println(a==b);
+//         System.out.println(a==c);
+//         System.out.println(c==d);
+
+//        String s1 = "Hello";
+//        String s2 = new StringBuffer("He").append("llo").toString();
+//        String s3 = s2.intern();
+//        //String s3 = s2;
+//        System.out.println("s1 == s2? " + (s1 == s2)); // false
+//        System.out.println("s1 == s3? " + (s1 == s3)); // true
+//        System.out.println(s1.equals(s2));
+
+        final  int a = 0;
+        Integer it1 = 100;
+        Integer it2 = 100;
+        Integer it3 = new Integer(100);
+
+        System.out.println(it1==it2);
+        System.out.println(it1==it3);
+
+
     }
 }

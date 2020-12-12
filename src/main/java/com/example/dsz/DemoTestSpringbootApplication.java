@@ -1,6 +1,7 @@
 package com.example.dsz;
 
 import com.alibaba.fastjson.JSON;
+import com.example.dsz.java_agent.TimeTest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,6 +12,8 @@ import tk.mybatis.spring.annotation.MapperScan;
 @SpringBootApplication
 public class DemoTestSpringbootApplication {
     public static void main(String[] args) {
+        TimeTest.sayHello();
+        TimeTest.sayHello2("sayHello2");
         log.info("主程序参数列表：" + JSON.toJSONString(args));
         SpringApplication.run(DemoTestSpringbootApplication.class, args);
     }
