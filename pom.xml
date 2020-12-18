@@ -177,6 +177,17 @@
             <artifactId>javassist</artifactId>
             <version>3.18.1-GA</version>
         </dependency>
+        <dependency>
+            <groupId>org.openjdk.jol</groupId>
+            <artifactId>jol-core</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+        <!--java agent-->
+        <dependency>
+            <groupId>com.agent</groupId>
+            <artifactId>java-agent-test</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>
