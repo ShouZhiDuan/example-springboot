@@ -12,8 +12,8 @@ import tk.mybatis.spring.annotation.MapperScan;
 @SpringBootApplication
 public class DemoTestSpringbootApplication {
     public static void main(String[] args) {
-        TimeTest.sayHello();
-        TimeTest.sayHello2("sayHello2");
+//        TimeTest.sayHello();
+//        TimeTest.sayHello2("sayHello2");
         log.info("主程序参数列表：" + JSON.toJSONString(args));
         SpringApplication.run(DemoTestSpringbootApplication.class, args);
     }
