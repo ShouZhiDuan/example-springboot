@@ -38,3 +38,8 @@ Premain-Class: com.example.dsz.MyAgent
 
 #### d、使用JavaAgent启动参数(在使用方项目启动脚本置顶如下参数)
 -javaagent:E:/dsz-git-work/java-agent-test/target/myagent.jar
+
+
+### 18、Lombok教程
+### 19、Hash&Equals
+### 20、Usafe操作
