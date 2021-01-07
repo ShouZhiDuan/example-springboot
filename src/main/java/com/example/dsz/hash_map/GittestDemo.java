@@ -6,4 +6,5 @@ package com.example.dsz.hash_map;
  * @Description:
  */
 public class GittestDemo {
+    private String name;
 }
