@@ -67,6 +67,9 @@ public class HashMapMainTest {
             System.out.println("hash=" + hash);
         }
 
+        Collection<Object> values = map.values();
+
+
     }
 
     public static void test1(){
