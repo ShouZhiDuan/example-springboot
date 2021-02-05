@@ -44,3 +44,4 @@ Premain-Class: com.example.dsz.MyAgent
 ### 19、Hash&Equals
 ### 20、Usafe操作
 ### 21、Spring事件机制 com.example.dsz.event_listener
+### 22、扩展实现自定义配置文件加载到Environment 

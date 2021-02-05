@@ -1,7 +1,5 @@
 package com.example.dsz.event_listener;
 
-import lombok.Data;
-import org.springframework.context.ApplicationEvent;
 import org.springframework.stereotype.Component;
 
 /**

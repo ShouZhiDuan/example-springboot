@@ -8,6 +8,7 @@ import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.core.env.MutablePropertySources;
 import tk.mybatis.spring.annotation.MapperScan;
 
 import javax.swing.*;
@@ -24,8 +25,30 @@ public class DemoTestSpringbootApplication {
         SpringApplication springApplication = new SpringApplication(DemoTestSpringbootApplication.class);
         springApplication.setBannerMode(Banner.Mode.OFF);
         springApplication.addListeners(new EventTest());
-        springApplication.run(args);
+        ConfigurableApplicationContext context = springApplication.run(args);
+        MutablePropertySources propertySources = context.getEnvironment().getPropertySources();
+        System.out.println(propertySources);
+
+
+        /**
+         * ApplicationArgs
+         */
+//          SpringApplication application = new SpringApplication(Application.class);
+////        ConfigurableApplicationContext context = application.run(args);
+////        ApplicationArguments arguments = context.getBean(ApplicationArguments.class);
+////        System.out.println(context.getEnvironment().getPropertySources().get("commandLineArgs").getProperty("spring.config.location"));
+////        System.out.println("name:"+arguments.getOptionNames()+" , value："+arguments.getOptionValues("spring.config.location"));
+////        context.close();
+
+
+
     }
+
+
+
+
+
+
 }
 
 /**
