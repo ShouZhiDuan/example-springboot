@@ -1,10 +1,12 @@
 package com.example.dsz.auto_environment_load;
 
+import lombok.Setter;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.env.MutablePropertySources;
 import org.springframework.core.env.PropertySource;
 import org.springframework.core.env.StandardEnvironment;
 import org.springframework.core.io.Resource;
+import org.springframework.stereotype.Service;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.StreamUtils;
 import org.springframework.web.context.support.StandardServletEnvironment;
@@ -21,6 +23,7 @@ import java.util.Map;
  * @Date: 2021/2/5 15:45
  * @Description:
  */
+@Service
 public abstract class AbstractPropertySourceDetector implements PropertySourceDetector {
 
     private static final String SERVLET_ENVIRONMENT_CLASS = "org.springframework.web."
@@ -33,8 +36,11 @@ public abstract class AbstractPropertySourceDetector implements PropertySourceDe
     }
 
     private String findPropertySource(MutablePropertySources sources) {
-        if (ClassUtils.isPresent(SERVLET_ENVIRONMENT_CLASS, null) && sources
-                .contains(StandardServletEnvironment.JNDI_PROPERTY_SOURCE_NAME)) {
+        if (
+                ClassUtils.isPresent(SERVLET_ENVIRONMENT_CLASS, null)
+                &&
+                sources.contains(StandardServletEnvironment.JNDI_PROPERTY_SOURCE_NAME)
+        ) {
             return StandardServletEnvironment.JNDI_PROPERTY_SOURCE_NAME;
         }
         return StandardEnvironment.SYSTEM_PROPERTIES_PROPERTY_SOURCE_NAME;
@@ -77,6 +83,7 @@ public abstract class AbstractPropertySourceDetector implements PropertySourceDe
     }
 
     protected String getContentStringFromResource(Resource resource) throws IOException {
+        //直接将文件资源转换成字符串
         return StreamUtils.copyToString(resource.getInputStream(), Charset.forName("UTF-8"));
     }
 }

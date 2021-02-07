@@ -1,6 +1,7 @@
 package com.example.dsz;
 
 import com.alibaba.fastjson.JSON;
+import com.example.dsz.auto_environment_load.PropertySourceDetectorConfiguration;
 import com.example.dsz.event_listener.EventTest;
 import com.example.dsz.java_agent.TimeTest;
 import lombok.extern.slf4j.Slf4j;
@@ -8,12 +9,14 @@ import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.Import;
 import org.springframework.core.env.MutablePropertySources;
 import tk.mybatis.spring.annotation.MapperScan;
 
 import javax.swing.*;
 
 @Slf4j
+@Import(PropertySourceDetectorConfiguration.class)
 @MapperScan("com.example.dsz.mapper")
 @SpringBootApplication
 public class DemoTestSpringbootApplication {

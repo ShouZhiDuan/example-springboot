@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * @Auther: ShouZhi@Duan
  * @Date: 2021/2/5 15:52
- * @Description:
+ * @Description: 装载所有的子类
  */
 public class PropertySourceDetectorComposite implements PropertySourceDetector {
 

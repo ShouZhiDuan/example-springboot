@@ -12,19 +12,19 @@ import org.springframework.stereotype.Component;
  * @Date: 2021/2/5 15:54
  * @Description:
  */
-@Slf4j
-@Component
-public class CustomCommandLineRunner implements CommandLineRunner {
-
-    @Value("${app.name}")
-    String name;
-    @Value("${app.age}")
-    Integer age;
-    @Autowired
-    ConfigurableEnvironment configurableEnvironment;
-
-    @Override
-    public void run(String... args) throws Exception {
-        log.info("name = {},age = {}", name, age);
-    }
-}
+//@Slf4j
+//@Component
+//public class CustomCommandLineRunner implements CommandLineRunner {
+//
+//    @Value("${mq-name}")
+//    String mqName;
+//    @Value("${auto.profile.name}")
+//    String autoProfileName;
+//    @Autowired
+//    ConfigurableEnvironment configurableEnvironment;
+//
+//    @Override
+//    public void run(String... args) {
+//        log.info("mqName = {},autoProfileName = {}", mqName, autoProfileName);
+//    }
+//}
