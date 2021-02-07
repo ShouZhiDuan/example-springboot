@@ -23,7 +23,7 @@ import java.util.Map;
  * @Date: 2021/2/5 15:45
  * @Description:
  */
-@Service
+@Service("abstractPropertySourceDetector")
 public abstract class AbstractPropertySourceDetector implements PropertySourceDetector {
 
     private static final String SERVLET_ENVIRONMENT_CLASS = "org.springframework.web."

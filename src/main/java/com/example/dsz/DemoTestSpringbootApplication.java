@@ -7,6 +7,7 @@ import com.example.dsz.java_agent.TimeTest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Import;
@@ -28,9 +29,13 @@ public class DemoTestSpringbootApplication {
         SpringApplication springApplication = new SpringApplication(DemoTestSpringbootApplication.class);
         springApplication.setBannerMode(Banner.Mode.OFF);
         springApplication.addListeners(new EventTest());
+        //springApplication.setWebApplicationType(WebApplicationType.NONE);
         ConfigurableApplicationContext context = springApplication.run(args);
+
+
         MutablePropertySources propertySources = context.getEnvironment().getPropertySources();
-        System.out.println(propertySources);
+        Object property = propertySources.get("applicationConfig: [classpath:/application.properties]").getProperty("server.port");
+        System.out.println(property);
 
 
         /**

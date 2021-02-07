@@ -10,8 +10,8 @@ import org.springframework.stereotype.Service;
  * @Date: 2020/8/12 15:19
  * @Description:
  */
-@Service
 @Slf4j
+@Service("tstServiceImpl")
 public class TestServiceImpl implements TestService {
 
 
