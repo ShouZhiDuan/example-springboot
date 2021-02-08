@@ -26,13 +26,15 @@ public class DemoTestSpringbootApplication {
 //        TimeTest.sayHello2("sayHello2");
         log.info("主程序参数列表：" + JSON.toJSONString(args));
         //ConfigurableApplicationContext run = SpringApplication.run(DemoTestSpringbootApplication.class, args);
+
+        /**
+         * Environment操作
+         */
         SpringApplication springApplication = new SpringApplication(DemoTestSpringbootApplication.class);
         springApplication.setBannerMode(Banner.Mode.OFF);
         springApplication.addListeners(new EventTest());
         //springApplication.setWebApplicationType(WebApplicationType.NONE);
         ConfigurableApplicationContext context = springApplication.run(args);
-
-
         MutablePropertySources propertySources = context.getEnvironment().getPropertySources();
         Object property = propertySources.get("applicationConfig: [classpath:/application.properties]").getProperty("server.port");
         System.out.println(property);
