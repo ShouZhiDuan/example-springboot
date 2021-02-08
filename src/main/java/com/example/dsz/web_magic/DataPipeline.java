@@ -11,9 +11,6 @@ import org.springframework.transaction.annotation.Transactional;
 import us.codecraft.webmagic.ResultItems;
 import us.codecraft.webmagic.Task;
 import us.codecraft.webmagic.pipeline.Pipeline;
-
-import java.awt.print.PrinterAbortException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
