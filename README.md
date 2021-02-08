@@ -43,7 +43,7 @@ Premain-Class: com.example.dsz.MyAgent
 ### 18、Lombok教程
 ### 19、Hash&Equals
 ### 20、Usafe操作
-### 21、Spring事件机制 com.example.dsz.event_listener
+### 21、Spring事件机制->com.example.dsz.event_listener
 ### 22、扩展实现自定义配置文件加载到Environment->com.example.dsz.auto_environment_load
 ### 23、SpringBoot核心原理分析->com.example.dsz.springboot_core
 ### 24、实现SpringBoot配置参数自动装配->com.example.dsz.auto_config
