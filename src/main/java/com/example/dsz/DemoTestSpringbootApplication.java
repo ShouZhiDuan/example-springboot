@@ -1,6 +1,7 @@
 package com.example.dsz;
 
 import com.alibaba.fastjson.JSON;
+import com.example.dsz.auto_config.DszProperties;
 import com.example.dsz.auto_environment_load.PropertySourceDetectorConfiguration;
 import com.example.dsz.event_listener.EventTest;
 import com.example.dsz.java_agent.TimeTest;
@@ -37,6 +38,7 @@ public class DemoTestSpringbootApplication {
         ConfigurableApplicationContext context = springApplication.run(args);
 
         DemoTestSpringbootApplication bean = context.getBean(DemoTestSpringbootApplication.class);
+        DszProperties dszProperties = context.getBean(DszProperties.class);
 
 
         MutablePropertySources propertySources = context.getEnvironment().getPropertySources();
