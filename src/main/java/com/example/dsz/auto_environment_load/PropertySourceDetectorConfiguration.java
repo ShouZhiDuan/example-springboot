@@ -22,7 +22,6 @@ import java.util.Map;
  * @Description:
  */
 
-@Configuration
 public class PropertySourceDetectorConfiguration implements ImportBeanDefinitionRegistrar {
 
     private static final String PATH_PREFIX = "profiles";

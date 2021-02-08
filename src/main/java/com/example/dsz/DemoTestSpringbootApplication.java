@@ -35,6 +35,10 @@ public class DemoTestSpringbootApplication {
         springApplication.addListeners(new EventTest());
         //springApplication.setWebApplicationType(WebApplicationType.NONE);
         ConfigurableApplicationContext context = springApplication.run(args);
+
+        DemoTestSpringbootApplication bean = context.getBean(DemoTestSpringbootApplication.class);
+
+
         MutablePropertySources propertySources = context.getEnvironment().getPropertySources();
         Object property = propertySources.get("applicationConfig: [classpath:/application.properties]").getProperty("server.port");
         System.out.println(property);
