@@ -1,11 +1,15 @@
 package com.example.dsz.model;
 
+import com.example.dsz.mybatis.type_handler.StatusHandler;
+import com.example.dsz.mybatis.type_handler.UserStatus;
+import org.apache.ibatis.type.JdbcType;
+import tk.mybatis.mapper.annotation.ColumnType;
+
 import javax.persistence.*;
 
 @Table(name = "dsz_test")
 public class DszTest {
     @Id
-    @GeneratedValue(generator = "JDBC")
     private Integer id;
 
     private String name;
@@ -15,6 +19,8 @@ public class DszTest {
     private String addr;
 
     private String tes;
+    @ColumnType(jdbcType = JdbcType.INTEGER,typeHandler = StatusHandler.class)
+    private UserStatus status;
 
     /**
      * @return id
@@ -84,5 +90,19 @@ public class DszTest {
      */
     public void setTes(String tes) {
         this.tes = tes == null ? null : tes.trim();
+    }
+
+    /**
+     * @return status
+     */
+    public UserStatus getStatus() {
+        return status;
+    }
+
+    /**
+     * @param status
+     */
+    public void setStatus(UserStatus status) {
+        this.status = status;
     }
 }

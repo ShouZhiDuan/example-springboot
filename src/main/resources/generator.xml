@@ -61,7 +61,8 @@
         <table tableName="question_group"></table>
         <table tableName="question_options"></table>
         <table tableName="questions"></table>
-        -->
         <table tableName="fudan_hpos"></table>
+        -->
+        <table tableName="dsz_test"></table>
     </context>
 </generatorConfiguration>
