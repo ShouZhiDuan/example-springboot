@@ -15,9 +15,7 @@ import java.sql.SQLException;
  * @Date: 2021/3/12 17:21
  * @Description:
  */
-//JDBC类型
 @MappedJdbcTypes(JdbcType.INTEGER)
-//JavaType类型
 @MappedTypes(value = UserStatus.class)
 public class StatusHandler extends BaseTypeHandler<UserStatus> {
     @Override
