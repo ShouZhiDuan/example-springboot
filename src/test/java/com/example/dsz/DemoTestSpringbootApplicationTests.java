@@ -19,9 +19,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class DemoTestSpringbootApplicationTests {
 
     @Autowired
-    private TransactionOneService transactionOneService;
-
-    @Autowired
     private DszTestMapper dszTestMapper;
 
     @Test
