@@ -1,7 +1,9 @@
 package com.example.dsz;
 
 import com.example.dsz.mapper.DszTestMapper;
+import com.example.dsz.mapper.TestMapper;
 import com.example.dsz.model.DszTest;
+import com.example.dsz.model.DszTest2;
 import com.example.dsz.mybatis.type_handler.UserStatus;
 import com.example.dsz.spring_transaction.service.TransactionOneService;
 import org.apache.ibatis.session.ExecutorType;
@@ -77,6 +79,18 @@ public class DemoTestSpringbootApplicationTests {
         System.out.println(System.currentTimeMillis()  - start);
     }
 
+
+    @Autowired
+    private TestMapper testMapper;
+    /**
+     * 一对一查询
+     */
+    @Test
+    public void testOneToOneQuery(){
+        //DszTest2 dszTest = testMapper.queryDetailsById(1);
+        DszTest2 dszTest2 = testMapper.queryDetailsById2(1);
+        System.out.println(dszTest2);
+    }
 
 
 

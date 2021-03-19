@@ -63,6 +63,6 @@
         <table tableName="questions"></table>
         <table tableName="fudan_hpos"></table>
         -->
-        <table tableName="dsz_test"></table>
+        <table tableName="school"></table>
     </context>
 </generatorConfiguration>

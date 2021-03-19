@@ -11,5 +11,6 @@
     <result column="addr" jdbcType="CHAR" property="addr" />
     <result column="tes" jdbcType="VARCHAR" property="tes" />
     <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="school_id" jdbcType="INTEGER" property="schoolId" />
   </resultMap>
 </mapper>

@@ -19,8 +19,8 @@ import javax.sound.midi.Soundbank;
 @RequestMapping("/type")
 public class MyBatisTypeHandlerController {
 
-    @Autowired
-    private DszTestMapper dszTestMapper;
+//    @Autowired
+//    private DszTestMapper dszTestMapper;
 
     @GetMapping("/handler")
     public void test(){
