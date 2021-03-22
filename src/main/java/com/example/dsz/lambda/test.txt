@@ -1,0 +1,31 @@
+Compiled from "LambdaMainTest.java"
+public class com.example.dsz.lambda.LambdaMainTest {
+  public com.example.dsz.lambda.LambdaMainTest();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+    LineNumberTable:
+      line 9: 0
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: return
+    LineNumberTable:
+      line 16: 0
+
+  public java.lang.Object test();
+    Code:
+       0: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       3: getstatic     #3                  // Field a:I
+       6: invokevirtual #4                  // Method java/io/PrintStream.println:(I)V
+       9: iconst_0
+      10: istore_1
+      11: iload_1
+      12: invokestatic  #5                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      15: areturn
+    LineNumberTable:
+      line 19: 0
+      line 20: 9
+      line 21: 11
+}

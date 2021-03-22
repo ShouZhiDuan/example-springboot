@@ -1,0 +1,231 @@
+Classfile /E:/dsz-git-work/example-springboot/src/main/java/com/example/dsz/lambda/FinalTest.class
+  Last modified 2021Äê1ÔÂ12ÈÕ; size 1751 bytes
+  MD5 checksum 91f132157ce90c4796c8f6bbd75a7b69
+  Compiled from "FinalTest.java"
+public class com.example.dsz.lambda.FinalTest
+  minor version: 0
+  major version: 55
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #2                          // com/example/dsz/lambda/FinalTest
+  super_class: #16                        // java/lang/Object
+  interfaces: 0, fields: 1, methods: 5, attributes: 3
+Constant pool:
+   #1 = Methodref          #16.#42        // java/lang/Object."<init>":()V
+   #2 = Class              #43            // com/example/dsz/lambda/FinalTest
+   #3 = Methodref          #2.#42         // com/example/dsz/lambda/FinalTest."<init>":()V
+   #4 = Fieldref           #2.#44         // com/example/dsz/lambda/FinalTest.test:Lcom/example/dsz/lambda/FinalTest;
+   #5 = Fieldref           #45.#46        // java/lang/System.out:Ljava/io/PrintStream;
+   #6 = String             #47            // setTestMethod
+   #7 = Methodref          #48.#49        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #8 = String             #30            // a
+   #9 = InvokeDynamic      #0:#53         // #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #10 = Class              #54            // java/lang/StringBuilder
+  #11 = Methodref          #10.#42        // java/lang/StringBuilder."<init>":()V
+  #12 = Methodref          #10.#55        // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #13 = String             #31            // b
+  #14 = Methodref          #10.#56        // java/lang/StringBuilder.toString:()Ljava/lang/String;
+  #15 = InvokeDynamic      #1:#58         // #1:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #16 = Class              #59            // java/lang/Object
+  #17 = Utf8               test
+  #18 = Utf8               Lcom/example/dsz/lambda/FinalTest;
+  #19 = Utf8               <init>
+  #20 = Utf8               ()V
+  #21 = Utf8               Code
+  #22 = Utf8               LineNumberTable
+  #23 = Utf8               LocalVariableTable
+  #24 = Utf8               this
+  #25 = Utf8               setTest
+  #26 = Utf8               stringTest
+  #27 = Utf8               (Ljava/lang/String;)V
+  #28 = Utf8               str
+  #29 = Utf8               Ljava/lang/String;
+  #30 = Utf8               a
+  #31 = Utf8               b
+  #32 = Utf8               stringTest1
+  #33 = Utf8               stringBuilder
+  #34 = Utf8               Ljava/lang/StringBuilder;
+  #35 = Utf8               s
+  #36 = Utf8               stringTest3
+  #37 = Utf8               s1
+  #38 = Utf8               s2
+  #39 = Utf8               s3
+  #40 = Utf8               SourceFile
+  #41 = Utf8               FinalTest.java
+  #42 = NameAndType        #19:#20        // "<init>":()V
+  #43 = Utf8               com/example/dsz/lambda/FinalTest
+  #44 = NameAndType        #17:#18        // test:Lcom/example/dsz/lambda/FinalTest;
+  #45 = Class              #60            // java/lang/System
+  #46 = NameAndType        #61:#62        // out:Ljava/io/PrintStream;
+  #47 = Utf8               setTestMethod
+  #48 = Class              #63            // java/io/PrintStream
+  #49 = NameAndType        #64:#27        // println:(Ljava/lang/String;)V
+  #50 = Utf8               BootstrapMethods
+  #51 = MethodHandle       6:#65          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #52 = String             #66            // \u0001b
+  #53 = NameAndType        #67:#68        // makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #54 = Utf8               java/lang/StringBuilder
+  #55 = NameAndType        #69:#70        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #56 = NameAndType        #71:#72        // toString:()Ljava/lang/String;
+  #57 = String             #73            // \u0001\u0001
+  #58 = NameAndType        #67:#74        // makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #59 = Utf8               java/lang/Object
+  #60 = Utf8               java/lang/System
+  #61 = Utf8               out
+  #62 = Utf8               Ljava/io/PrintStream;
+  #63 = Utf8               java/io/PrintStream
+  #64 = Utf8               println
+  #65 = Methodref          #75.#76        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #66 = Utf8               \u0001b
+  #67 = Utf8               makeConcatWithConstants
+  #68 = Utf8               (Ljava/lang/String;)Ljava/lang/String;
+  #69 = Utf8               append
+  #70 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #71 = Utf8               toString
+  #72 = Utf8               ()Ljava/lang/String;
+  #73 = Utf8               \u0001\u0001
+  #74 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #75 = Class              #77            // java/lang/invoke/StringConcatFactory
+  #76 = NameAndType        #67:#81        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #77 = Utf8               java/lang/invoke/StringConcatFactory
+  #78 = Class              #83            // java/lang/invoke/MethodHandles$Lookup
+  #79 = Utf8               Lookup
+  #80 = Utf8               InnerClasses
+  #81 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #82 = Class              #84            // java/lang/invoke/MethodHandles
+  #83 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #84 = Utf8               java/lang/invoke/MethodHandles
+{
+  private final com.example.dsz.lambda.FinalTest test;
+    descriptor: Lcom/example/dsz/lambda/FinalTest;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  public com.example.dsz.lambda.FinalTest();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #2                  // class com/example/dsz/lambda/FinalTest
+         8: dup
+         9: invokespecial #3                  // Method "<init>":()V
+        12: putfield      #4                  // Field test:Lcom/example/dsz/lambda/FinalTest;
+        15: return
+      LineNumberTable:
+        line 8: 0
+        line 10: 4
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      16     0  this   Lcom/example/dsz/lambda/FinalTest;
+
+  public void setTest();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #6                  // String setTestMethod
+         5: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: return
+      LineNumberTable:
+        line 13: 0
+        line 14: 8
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0  this   Lcom/example/dsz/lambda/FinalTest;
+
+  public void stringTest(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=4, args_size=2
+         0: ldc           #8                  // String a
+         2: astore_2
+         3: aload_2
+         4: invokedynamic #9,  0              // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+         9: astore_3
+        10: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        13: aload_2
+        14: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        17: return
+      LineNumberTable:
+        line 17: 0
+        line 18: 3
+        line 19: 10
+        line 20: 17
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0  this   Lcom/example/dsz/lambda/FinalTest;
+            0      18     1   str   Ljava/lang/String;
+            3      15     2     a   Ljava/lang/String;
+           10       8     3     b   Ljava/lang/String;
+
+  public void stringTest1(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=4, args_size=2
+         0: new           #10                 // class java/lang/StringBuilder
+         3: dup
+         4: invokespecial #11                 // Method java/lang/StringBuilder."<init>":()V
+         7: astore_2
+         8: aload_2
+         9: ldc           #8                  // String a
+        11: invokevirtual #12                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        14: ldc           #13                 // String b
+        16: invokevirtual #12                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        19: invokevirtual #14                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        22: astore_3
+        23: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        26: aload_3
+        27: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        30: return
+      LineNumberTable:
+        line 23: 0
+        line 24: 8
+        line 25: 23
+        line 26: 30
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      31     0  this   Lcom/example/dsz/lambda/FinalTest;
+            0      31     1   str   Ljava/lang/String;
+            8      23     2 stringBuilder   Ljava/lang/StringBuilder;
+           23       8     3     s   Ljava/lang/String;
+
+  public void stringTest3();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=4, args_size=1
+         0: ldc           #8                  // String a
+         2: astore_1
+         3: ldc           #13                 // String b
+         5: astore_2
+         6: aload_1
+         7: aload_2
+         8: invokedynamic #15,  0             // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+        13: astore_3
+        14: return
+      LineNumberTable:
+        line 29: 0
+        line 30: 3
+        line 31: 6
+        line 32: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      15     0  this   Lcom/example/dsz/lambda/FinalTest;
+            3      12     1    s1   Ljava/lang/String;
+            6       9     2    s2   Ljava/lang/String;
+           14       1     3    s3   Ljava/lang/String;
+}
+SourceFile: "FinalTest.java"
+InnerClasses:
+  public static final #79= #78 of #82;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+BootstrapMethods:
+  0: #51 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #52 \u0001b
+  1: #51 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #57 \u0001\u0001

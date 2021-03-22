@@ -1,0 +1,336 @@
+Classfile /E:/dsz-git-work/example-springboot/src/main/java/com/example/dsz/jvm/do_test/JvmTestDo.class
+  Last modified 2021年1月7日; size 1168 bytes
+  MD5 checksum 169b8443a1f6e39191adaebe8d8e0da7
+  Compiled from "JvmTestDo.java"
+public class com.example.dsz.jvm.do_test.JvmTestDo implements com.example.dsz.jvm.do_test.JvmInterface
+  minor version: 0
+  major version: 55
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #15                         // com/example/dsz/jvm/do_test/JvmTestDo
+  super_class: #18                        // java/lang/Object
+  interfaces: 1, fields: 10, methods: 5, attributes: 1
+Constant pool:
+   #1 = Methodref          #18.#48        // java/lang/Object."<init>":()V
+   #2 = String             #20            // privateName
+   #3 = Fieldref           #15.#49        // com/example/dsz/jvm/do_test/JvmTestDo.privateName:Ljava/lang/String;
+   #4 = Fieldref           #15.#50        // com/example/dsz/jvm/do_test/JvmTestDo.intB:I
+   #5 = Fieldref           #15.#51        // com/example/dsz/jvm/do_test/JvmTestDo.finalIntC:I
+   #6 = String             #33            // finalString
+   #7 = Fieldref           #15.#52        // com/example/dsz/jvm/do_test/JvmTestDo.finalString:Ljava/lang/String;
+   #8 = Fieldref           #15.#53        // com/example/dsz/jvm/do_test/JvmTestDo.intC:I
+   #9 = Fieldref           #54.#55        // java/lang/System.out:Ljava/io/PrintStream;
+  #10 = Methodref          #56.#57        // java/io/PrintStream.println:(I)V
+  #11 = Methodref          #15.#58        // com/example/dsz/jvm/do_test/JvmTestDo.testDo:(I)V
+  #12 = Methodref          #56.#59        // java/io/PrintStream.println:()V
+  #13 = String             #60            // staticName
+  #14 = Fieldref           #15.#61        // com/example/dsz/jvm/do_test/JvmTestDo.staticStringName:Ljava/lang/String;
+  #15 = Class              #62            // com/example/dsz/jvm/do_test/JvmTestDo
+  #16 = Methodref          #15.#48        // com/example/dsz/jvm/do_test/JvmTestDo."<init>":()V
+  #17 = Fieldref           #15.#63        // com/example/dsz/jvm/do_test/JvmTestDo.jvmTestDo:Lcom/example/dsz/jvm/do_test/JvmTestDo;
+  #18 = Class              #64            // java/lang/Object
+  #19 = Class              #65            // com/example/dsz/jvm/do_test/JvmInterface
+  #20 = Utf8               privateName
+  #21 = Utf8               Ljava/lang/String;
+  #22 = Utf8               intB
+  #23 = Utf8               I
+  #24 = Utf8               intC
+  #25 = Utf8               staticStringNul
+  #26 = Utf8               staticStringName
+  #27 = Utf8               jvmTestDo
+  #28 = Utf8               Lcom/example/dsz/jvm/do_test/JvmTestDo;
+  #29 = Utf8               finalIntC
+  #30 = Utf8               ConstantValue
+  #31 = Integer            1
+  #32 = Utf8               finalIntD
+  #33 = Utf8               finalString
+  #34 = Utf8               finalStaticString
+  #35 = String             #34            // finalStaticString
+  #36 = Utf8               <init>
+  #37 = Utf8               ()V
+  #38 = Utf8               Code
+  #39 = Utf8               LineNumberTable
+  #40 = Utf8               testDo
+  #41 = Utf8               (I)V
+  #42 = Utf8               main
+  #43 = Utf8               ([Ljava/lang/String;)V
+  #44 = Utf8               test
+  #45 = Utf8               <clinit>
+  #46 = Utf8               SourceFile
+  #47 = Utf8               JvmTestDo.java
+  #48 = NameAndType        #36:#37        // "<init>":()V
+  #49 = NameAndType        #20:#21        // privateName:Ljava/lang/String;
+  #50 = NameAndType        #22:#23        // intB:I
+  #51 = NameAndType        #29:#23        // finalIntC:I
+  #52 = NameAndType        #33:#21        // finalString:Ljava/lang/String;
+  #53 = NameAndType        #24:#23        // intC:I
+  #54 = Class              #66            // java/lang/System
+  #55 = NameAndType        #67:#68        // out:Ljava/io/PrintStream;
+  #56 = Class              #69            // java/io/PrintStream
+  #57 = NameAndType        #70:#41        // println:(I)V
+  #58 = NameAndType        #40:#41        // testDo:(I)V
+  #59 = NameAndType        #70:#37        // println:()V
+  #60 = Utf8               staticName
+  #61 = NameAndType        #26:#21        // staticStringName:Ljava/lang/String;
+  #62 = Utf8               com/example/dsz/jvm/do_test/JvmTestDo
+  #63 = NameAndType        #27:#28        // jvmTestDo:Lcom/example/dsz/jvm/do_test/JvmTestDo;
+  #64 = Utf8               java/lang/Object
+  #65 = Utf8               com/example/dsz/jvm/do_test/JvmInterface
+  #66 = Utf8               java/lang/System
+  #67 = Utf8               out
+  #68 = Utf8               Ljava/io/PrintStream;
+  #69 = Utf8               java/io/PrintStream
+  #70 = Utf8               println
+{
+  public int intB;
+    descriptor: I
+    flags: (0x0001) ACC_PUBLIC
+
+  public static int intC;
+    descriptor: I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+
+  public static java.lang.String staticStringName;
+    descriptor: Ljava/lang/String;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+
+  public final int finalIntC;
+    descriptor: I
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    ConstantValue: int 1
+
+  public static final int finalIntD;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 1
+
+  public final java.lang.String finalString;
+    descriptor: Ljava/lang/String;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    ConstantValue: String finalString
+
+  public static final java.lang.String finalStaticString;
+    descriptor: Ljava/lang/String;
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: String finalStaticString
+
+  public com.example.dsz.jvm.do_test.JvmTestDo();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: ldc           #2                  // String privateName
+         7: putfield      #3                  // Field privateName:Ljava/lang/String;
+        10: aload_0
+        11: iconst_1
+        12: putfield      #4                  // Field intB:I
+        15: aload_0
+        16: iconst_1
+        17: putfield      #5                  // Field finalIntC:I
+        20: aload_0
+        21: ldc           #6                  // String finalString
+        23: putfield      #7                  // Field finalString:Ljava/lang/String;
+        26: return
+      LineNumberTable:
+        line 8: 0
+        line 10: 4
+        line 11: 10
+        line 16: 15
+        line 18: 20
+
+  static void testDo(int);
+    descriptor: (I)V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: getstatic     #8                  // Field intC:I
+         3: iconst_1
+         4: iadd
+         5: istore_1
+         6: getstatic     #9                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         9: iload_1
+        10: invokevirtual #10                 // Method java/io/PrintStream.println:(I)V
+        13: getstatic     #9                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        16: iload_0
+        17: invokevirtual #10                 // Method java/io/PrintStream.println:(I)V
+        20: return
+      LineNumberTable:
+        line 24: 0        
+        line 25: 6
+        line 26: 13      //line 26表示我们实际java文件中对应的第26行代码    13表示LineNumberTable上面操作数栈编号对应是实际java代码的操作指令。
+        line 27: 20
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: bipush        6
+         2: invokestatic  #11                 // Method testDo:(I)V
+         5: return
+      LineNumberTable:
+        line 30: 0
+        line 31: 5
+
+  public void test();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: getstatic     #9                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: invokevirtual #12                 // Method java/io/PrintStream.println:()V
+         6: return
+      LineNumberTable:
+        line 35: 0
+        line 36: 6
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: iconst_2
+         1: putstatic     #8                  // Field intC:I
+         4: ldc           #13                 // String staticName
+         6: putstatic     #14                 // Field staticStringName:Ljava/lang/String;
+         9: new           #15                 // class com/example/dsz/jvm/do_test/JvmTestDo
+        12: dup
+        13: invokespecial #16                 // Method "<init>":()V
+        16: putstatic     #17                 // Field jvmTestDo:Lcom/example/dsz/jvm/do_test/JvmTestDo;
+        19: return
+      LineNumberTable:
+        line 12: 0
+        line 14: 4
+        line 15: 9
+}
+SourceFile: "JvmTestDo.java"
+
+
+------------------------------------------------------------------------------------------------------------
+
+
+to see https://blog.csdn.net/qq_33521184/article/details/105622903
+
+LocalVariableTable:
+   Start  Length  Slot  Name   Signature
+    0       8      0      a        I
+    0       8      1      b        I
+    2       6      2      c        I
+
+
+
+
+
+	 git clone https://nvxg.nvxclouds.com:9443/nvxapp/parent
+	 git clone https://nvxg.nvxclouds.com:9443/nvxapp/apigate
+	 E:\git-workspace-new
+	
+	
+	
+	
+	官网服务->图形验证码接口联调（接口已开发完成）。
+    官网服务->咨询提交接口联调（接口已开发完成）。
+	官网服务以上接口文档定义。
+	官网服务线上部署。
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<html>
+<body>
+<div>
+     <!-- 验证码 输入框 -->
+    <input id="code" placeholder="验证码" type="text" class="" style="width:170px">
+    <!-- 验证码 显示 -->
+    <img οnclick="javascript:getvCode()" id="verifyimg" style="margin-left: 20px;"/>
+</div>
+<script type="text/javascript">
+    getvCode();
+    //设置image标签的src属性值
+    function getvCode() {
+        document.getElementById("verifyimg").src = timestamp("http://192.168.50.175/code/verifyCode/1");
+    }
+    //为url添加时间戳
+     function timestamp(url) {
+        var getTimestamp = new Date().getTime();
+        if (url.indexOf("?") > -1) {
+            url = url + "&timestamp=" + getTimestamp
+        } else {
+            url = url + "?timestamp=" + getTimestamp
+        }
+        return url;
+    };
+</script>
+</body>
+</html>
+	
+	
+	
+	
+	
+
+ssh -i ./NVXClouds_Azure root@116.62.62.88
+	
+	
+	
+	
+registry.cn-hangzhou.aliyuncs.com/dsz-docker/nvclouds-official:1.0.0-SNAPSHOT
+	
+	
+	
+	
+	
+	
+FROM maven:3.6.3-openjdk-11
+
+#定义变量
+ADD src/main/docker /nvclouds_offical_dir
+#容器中工作目录
+WORKDIR /nvclouds_offical_dir
+#root用户进入容器
+USER root
+#将本地jar包copy到容器根目录下
+ADD  /target/nvclouds-offical.jar /nvclouds-offical.jar
+#将本地启动脚本copy到容器中
+ADD src/main/docker/run.sh /bin/run.sh
+#授权脚本，否则无法执行
+RUN chmod +x /bin/run.sh
+#引用外部.env变量
+#EXPOSE ${NVCLOUDS_OFFICAL_PORT}
+#引用当前文件定义的变量
+EXPOSE 80
+CMD ["/bin/run.sh"]
+	
+	
+	
+	
+	/home/spark/spark
+	spark-3.0.1-bin-hadoop2.7.tgz
+	
+	export SPARK_HOME=/home/spark/spark
+	export PATH=$PATH:$SPARK_HOME/bin
+	
+	http://192.168.50.203:4040/jobs/
+	
+	spark.master    spark://192.168.50.203:7077
+	
+	
+! D:\google-download\hadoop-3.3.0.tar.gz: 无法创建符号链接 D:\google-download\hadoop-3.3.0\hadoop-3.3.0\lib\native\libnativetask.so
+! 您可能需要以管理器身份运行 WinRAR
+  客户端没有所需的特权。
+! D:\google-download\hadoop-3.3.0.tar.gz: 无法创建符号链接 D:\google-download\hadoop-3.3.0\hadoop-3.3.0\lib\native\libhadoop.so
+! 您可能需要以管理器身份运行 WinRAR
+  客户端没有所需的特权。
+! D:\google-download\hadoop-3.3.0.tar.gz: 无法创建符号链接 D:\google-download\hadoop-3.3.0\hadoop-3.3.0\lib\native\libhdfs.so
+! 您可能需要以管理器身份运行 WinRAR
+  客户端没有所需的特权。
+
+
