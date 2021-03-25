@@ -2,11 +2,7 @@ package com.example.dsz.model;
 
 
 import com.example.dsz.mybatis.type_handler.UserStatus;
-import lombok.Getter;
-import lombok.Setter;
 
-
-@Getter @Setter
 public class DszTest2 {
     private Integer id;
     private String name;
@@ -16,7 +12,7 @@ public class DszTest2 {
     private UserStatus status;
     private School2 school;
 
- /*   public Integer getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -81,7 +77,6 @@ public class DszTest2 {
                 ", addr='" + addr + '\'' +
                 ", tes='" + tes + '\'' +
                 ", status=" + status +
-                ", school=" + school +
                 '}';
-    }*/
+    }
 }

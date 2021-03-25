@@ -15,6 +15,7 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.transaction.annotation.Transactional;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = DemoTestSpringbootApplication.class)
@@ -86,11 +87,15 @@ public class DemoTestSpringbootApplicationTests {
      * 一对一查询
      */
     @Test
+    @Transactional
     public void testOneToOneQuery(){
         //DszTest2 dszTest = testMapper.queryDetailsById(1);
         DszTest2 dszTest2 = testMapper.queryDetailsById2(1);
+        DszTest2 dszTest3 = testMapper.queryDetailsById2(1);
         System.out.println(dszTest2);
     }
+
+
 
 
 
