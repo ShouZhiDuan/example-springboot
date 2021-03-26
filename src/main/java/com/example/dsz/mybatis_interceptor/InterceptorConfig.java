@@ -22,10 +22,10 @@ public class InterceptorConfig {
         return new StatementHandlerInterceptor();
     }
 
-    @Bean
-    public ParameterHandlerInterceptor parameterHandlerInterceptor(){
-        return new ParameterHandlerInterceptor();
-    }
+//    @Bean
+//    public ParameterHandlerInterceptor parameterHandlerInterceptor(){
+//        return new ParameterHandlerInterceptor();
+//    }
 
     @Bean
     public ConfigurationCustomizer configurationCustomizer(){
@@ -33,7 +33,7 @@ public class InterceptorConfig {
               configuration.setAggressiveLazyLoading(true);
               configuration.addInterceptor(executorInterceptor());//拦截器1
               configuration.addInterceptor(statementHandlerInterceptor());//拦截器2
-              configuration.addInterceptor(parameterHandlerInterceptor());//拦截器3
+             // configuration.addInterceptor(parameterHandlerInterceptor());//拦截器3
         };
     }
 
