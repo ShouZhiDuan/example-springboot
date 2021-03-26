@@ -6,7 +6,6 @@ import com.example.dsz.model.DszTest;
 import com.example.dsz.model.DszTest2;
 import com.example.dsz.model.School2;
 import com.example.dsz.mybatis.type_handler.UserStatus;
-import com.example.dsz.spring_transaction.service.TransactionOneService;
 import org.apache.ibatis.session.ExecutorType;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -18,15 +17,21 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.sound.midi.Soundbank;
-import java.lang.reflect.Proxy;
-
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = DemoTestSpringbootApplication.class)
 public class DemoTestSpringbootApplicationTests {
 
     @Autowired
     private DszTestMapper dszTestMapper;
+
+    @Autowired
+    private SqlSessionTemplate sqlSessionTemplate;
+
+
+    @Test
+    public void  testSqlTemp(){
+        SqlSession sqlSession = sqlSessionTemplate.getSqlSessionFactory().openSession();
+    }
 
     @Test
     public void  test1(){
@@ -44,10 +49,6 @@ public class DemoTestSpringbootApplicationTests {
         DszTest dszTest = dszTestMapper.selectByPrimaryKey(13);
         System.out.println(dszTest);
     }
-
-    @Autowired
-    private SqlSessionTemplate sqlSessionTemplate;
-
 
     /**
      * mybatis批量插入
