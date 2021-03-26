@@ -23,11 +23,17 @@ public class InterceptorConfig {
     }
 
     @Bean
+    public ParameterHandlerInterceptor parameterHandlerInterceptor(){
+        return new ParameterHandlerInterceptor();
+    }
+
+    @Bean
     public ConfigurationCustomizer configurationCustomizer(){
         return configuration -> {
               configuration.setAggressiveLazyLoading(true);
               configuration.addInterceptor(executorInterceptor());//拦截器1
               configuration.addInterceptor(statementHandlerInterceptor());//拦截器2
+              configuration.addInterceptor(parameterHandlerInterceptor());//拦截器3
         };
     }
 

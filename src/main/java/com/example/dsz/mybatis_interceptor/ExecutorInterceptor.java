@@ -39,6 +39,7 @@ public class ExecutorInterceptor implements Interceptor {
      */
     @Override
     public Object intercept(Invocation invocation) throws Throwable {
+        log.info("ExecutorInterceptor");
         log.info("==========>>>>>>SQL Intercept<<<<<<==========");
         try {
             MappedStatement mappedStatement = (MappedStatement)invocation.getArgs()[0];

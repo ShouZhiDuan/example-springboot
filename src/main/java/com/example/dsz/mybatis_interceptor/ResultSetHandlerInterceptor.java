@@ -28,6 +28,7 @@ public class ResultSetHandlerInterceptor implements Interceptor {
      */
     @Override
     public Object intercept(Invocation invocation) throws Throwable {
+        log.info("ResultSetHandlerInterceptor");
         DefaultResultSetHandler defaultResultSetHandler = (DefaultResultSetHandler) invocation.getTarget();
         Field field = defaultResultSetHandler.getClass().getDeclaredField("mappedStatement");
         field.setAccessible(true);
