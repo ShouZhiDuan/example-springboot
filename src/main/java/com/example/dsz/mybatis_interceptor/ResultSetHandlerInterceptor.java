@@ -21,7 +21,7 @@ import java.util.Properties;
 
 @Slf4j
 @Intercepts({ @Signature(type = ResultSetHandler.class, method = "handleResultSets", args = { Statement.class }) })
-public class ForDataViewQueryInterceptor implements Interceptor {
+public class ResultSetHandlerInterceptor implements Interceptor {
 
     /**
      * 拦截返回结果集处理 常见的JSON串映射到对象的属性字段

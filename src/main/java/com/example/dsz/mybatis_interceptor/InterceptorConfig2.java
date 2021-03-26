@@ -2,9 +2,7 @@ package com.example.dsz.mybatis_interceptor;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import tk.mybatis.mapper.autoconfigure.ConfigurationCustomizer;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
@@ -24,7 +22,7 @@ public class InterceptorConfig2 {
     public void addMySqlInterceptor() {
         sqlSessionFactoryList.stream().forEach(
                 sqlSessionFactory -> sqlSessionFactory.getConfiguration()
-                        .addInterceptor(new ForDataViewQueryInterceptor())
+                        .addInterceptor(new ResultSetHandlerInterceptor())
         );
     }
 }

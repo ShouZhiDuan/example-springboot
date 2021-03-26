@@ -1,14 +1,8 @@
 package com.example.dsz.mybatis_interceptor;
 
-import org.apache.ibatis.executor.statement.StatementHandler;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import tk.mybatis.mapper.autoconfigure.ConfigurationCustomizer;
-
-import javax.annotation.PostConstruct;
-import java.util.List;
 
 /**
  * @Auther: ShouZhi@Duan
