@@ -97,8 +97,6 @@ public class DemoTestSpringbootApplicationTests {
         DszTest2 dszTest2 = testMapper.queryDetailsById2(1);
         DszTest2 dszTest3 = testMapper.queryDetailsById2(1);
         System.out.println(dszTest2);
-
-
     }
 
 
