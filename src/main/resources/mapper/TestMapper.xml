@@ -2,6 +2,14 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.dsz.mapper.TestMapper">
 
+    <!--
+       mybatis缓存to see https://tech.meituan.com/2018/01/19/mybatis-cache.html
+    -->
+
+    <!--配置二级缓存相关策略-->
+    <!--<cache type="org.apache.ibatis.cache.impl.PerpetualCache" />-->
+    <!--也可以复用别的Mapper里面的cache配置-->
+    <!--<cache-ref namespace="com.example.dsz.mapper.DszTestMapper" />-->
 
     <!--一对一、嵌套结果-->
     <resultMap id="dszWithSchool" type="com.example.dsz.model.DszTest2">
@@ -31,7 +39,7 @@
         <result column="status" property="status"  typeHandler="com.example.dsz.mybatis.type_handler.StatusHandler"/>
         <association property="school" column="school_id" javaType="com.example.dsz.model.School2" select="selectSchool"/>
     </resultMap>
-    <select id="queryDetailsById2" parameterType="int" resultMap="dszWithSchoolAsync">
+    <select id="queryDetailsById2" parameterType="int" resultMap="dszWithSchoolAsync" flushCache="true">
         select dt.* from dsz_test dt  where dt.id = #{id}
     </select>
     <select id="selectSchool" parameterType="int" resultType="com.example.dsz.model.School2">
@@ -40,6 +48,9 @@
 
 
 
+    <select id="queryOneById" parameterType="int" resultType="com.example.dsz.model.School2">
+             select  id schoolId,school_name schoolName from  school where  id = #{id} and id=2
+    </select>
 
 
 

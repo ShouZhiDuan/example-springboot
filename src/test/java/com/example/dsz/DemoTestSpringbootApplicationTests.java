@@ -4,6 +4,7 @@ import com.example.dsz.mapper.DszTestMapper;
 import com.example.dsz.mapper.TestMapper;
 import com.example.dsz.model.DszTest;
 import com.example.dsz.model.DszTest2;
+import com.example.dsz.model.School2;
 import com.example.dsz.mybatis.type_handler.UserStatus;
 import com.example.dsz.spring_transaction.service.TransactionOneService;
 import org.apache.ibatis.session.ExecutorType;
@@ -16,6 +17,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
+
+import javax.sound.midi.Soundbank;
+import java.lang.reflect.Proxy;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = DemoTestSpringbootApplication.class)
@@ -93,8 +97,16 @@ public class DemoTestSpringbootApplicationTests {
         DszTest2 dszTest2 = testMapper.queryDetailsById2(1);
         DszTest2 dszTest3 = testMapper.queryDetailsById2(1);
         System.out.println(dszTest2);
+
+
     }
 
+
+    @Test
+    public void tesQuery(){
+        School2 dszTest2 = testMapper.queryOneById(1);
+        System.out.println(dszTest2);
+    }
 
 
 
