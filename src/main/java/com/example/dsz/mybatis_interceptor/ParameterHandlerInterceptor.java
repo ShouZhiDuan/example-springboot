@@ -18,6 +18,11 @@ import java.util.Properties;
         @Signature(type = ParameterHandler.class, method = "setParameters", args = { PreparedStatement.class })
 })
 public class ParameterHandlerInterceptor implements Interceptor {
+
+    /**
+     *  SQL执行参数处理
+     *  to see https://blog.csdn.net/yangbo787827967/article/details/81562476
+     */
     @Override
     public Object intercept(Invocation invocation) throws Throwable {
         log.info("ParameterHandlerInterceptor");
