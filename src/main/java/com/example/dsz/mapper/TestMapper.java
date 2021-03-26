@@ -11,7 +11,11 @@ public interface TestMapper{
 
   DszTest2 queryDetailsById2(@Param("id") int id);
 
-  School2 queryOneById(@Param("id") int id);
+  School2 queryOneById(@Param("id") int id, @Param("id2") int id2);
+
+  School2 queryOneByObject(@Param("param") School2 school2);
+
+
 
 
 }

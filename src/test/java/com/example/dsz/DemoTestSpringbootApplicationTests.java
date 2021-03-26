@@ -102,7 +102,15 @@ public class DemoTestSpringbootApplicationTests {
 
     @Test
     public void tesQuery(){
-        School2 dszTest2 = testMapper.queryOneById(1);
+        School2 dszTest2 = testMapper.queryOneById(1,1);
+        System.out.println(dszTest2);
+    }
+
+    @Test
+    public void tesQuery2(){
+        School2 school2 = new School2();
+        school2.setSchoolId(1);
+        School2 dszTest2 = testMapper.queryOneByObject(school2);
         System.out.println(dszTest2);
     }
 

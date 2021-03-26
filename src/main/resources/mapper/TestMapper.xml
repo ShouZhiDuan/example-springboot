@@ -48,10 +48,14 @@
 
 
 
-    <select id="queryOneById" parameterType="int" resultType="com.example.dsz.model.School2">
-             select  id schoolId,school_name schoolName from  school where  id = #{id} and id=2
+    <select id="queryOneById" resultType="com.example.dsz.model.School2">
+             select  id schoolId,school_name schoolName from  school where  id = #{id} and id = #{id2}
     </select>
 
+
+    <select id="queryOneByObject" resultType="com.example.dsz.model.School2">
+             select  id schoolId,school_name schoolName from  school where  id = #{param.schoolId}
+    </select>
 
 
 
