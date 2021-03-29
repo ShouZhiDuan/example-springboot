@@ -21,6 +21,10 @@ public class ServiceHandler implements InvocationHandler {
         this.target = target;
     }
 
+    /**
+     * 生成代理对象
+     * @return
+     */
     public TestHandlerService proxy(){
       return (TestHandlerService) Proxy.newProxyInstance(target.getClass().getClassLoader(),target.getClass().getInterfaces(),this);
     }
