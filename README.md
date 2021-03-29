@@ -49,4 +49,4 @@ Premain-Class: com.example.dsz.MyAgent
 ### 24、实现SpringBoot配置参数自动装配->com.example.dsz.auto_config
 ### 25、Mybatis Objectactory->com.example.dsz.mybatis.object_factory
 ### 26、Mybatis TypeHandler->com.example.dsz.mybatis.type_handler
-### 27、JDK动态代理->com.example.dsz.invocation_handler
+### 27、JDK动态代理->com.example.dsz.jdk_cglib_proxy.jdk
