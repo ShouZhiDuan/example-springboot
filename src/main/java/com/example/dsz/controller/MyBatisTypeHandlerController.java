@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.example.dsz.mapper.DszTestMapper;
 import com.example.dsz.model.DszTest;
 import com.example.dsz.mybatis.type_handler.UserStatus;
+import com.example.dsz.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,20 +26,20 @@ public class MyBatisTypeHandlerController {
     @Autowired
     private DszTestMapper dszTestMapper;
 
+    @Autowired
+    private TestService testService;
+
     @GetMapping("/handler")
     public void test(){
         List<DszTest> dszTests = dszTestMapper.selectAll();
         System.out.println(JSON.toJSONString(dszTests));
     }
 
-    @Transactional
     @GetMapping("/handler1")
-    public void test1(){
-        DszTest dszTest = dszTestMapper.selectByPrimaryKey(1);
-        System.out.println(JSON.toJSONString(dszTest));
+    public Object test1(){
+         return testService.queryTest();
     }
 
-    @Transactional
     @GetMapping("/handler2")
     public void test2(){
         DszTest dszTest = dszTestMapper.selectByPrimaryKey(1);
