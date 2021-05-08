@@ -15,7 +15,7 @@ public class DockerTestController {
 
      @GetMapping("/docker")
      private Object helloWord(){
-        return "Hello Docker My Name id SouZhi@Duan ! ! ! ! ! !";
+        return "Hello Docker My Name is ShouZhi@Duan ! ! ! ! ! !";
      }
 
 

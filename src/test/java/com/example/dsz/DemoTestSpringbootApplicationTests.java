@@ -6,6 +6,7 @@ import com.example.dsz.model.DszTest;
 import com.example.dsz.model.DszTest2;
 import com.example.dsz.model.School2;
 import com.example.dsz.mybatis.type_handler.UserStatus;
+import com.example.dsz.transaction.TxOneService;
 import org.apache.ibatis.session.ExecutorType;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -113,6 +114,15 @@ public class DemoTestSpringbootApplicationTests {
         school2.setSchoolId(1);
         School2 dszTest2 = testMapper.queryOneByObject(school2);
         System.out.println(dszTest2);
+    }
+
+
+    @Autowired
+    private TxOneService txOneService;
+
+    @Test
+    public void tesTx(){
+       txOneService.testTx();
     }
 
 
