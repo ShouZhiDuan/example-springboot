@@ -10,27 +10,29 @@ public class FunctionMainTest {
     @FunctionalInterface
     interface Cat {
         String say();
-        default String doTest(){
-            return  "XXXXXX";
+
+        default String doTest() {
+            return "XXXXXX";
         }
     }
 
-    public static String helpCatSay(Cat cat){
-       return cat.say();
+    public static String helpCatSay(Cat cat) {
+        return cat.say();
     }
 
-    public static String helpDogSay(String word,Dog dog){
+    public static String helpDogSay(String word, Dog dog) {
         return dog.dogSay(word);
     }
 
     public static void main(String[] args) {
-        System.out.println(helpCatSay(()->{ return "喵喵"; }));
+        System.out.println(helpCatSay(() -> {
+            return "喵喵";
+        }));
         System.out.println(
-                helpDogSay("旺旺",(a)->{
+                helpDogSay("旺旺", (a) -> {
                     return a;
                 })
         );
-
 
 
     }

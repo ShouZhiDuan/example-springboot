@@ -16,7 +16,7 @@ public class CrossController {
 
     @CrossOrigin
     @GetMapping("/test")
-    public void  test(){
+    public void test() {
         System.out.println("666666");
     }
 

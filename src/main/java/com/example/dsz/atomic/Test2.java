@@ -10,16 +10,15 @@ import lombok.Data;
 @Data
 public class Test2 {
     public int a;
-    public final int b=0;
+    public final int b = 0;
     static int c;
-    public static String d="test";
+    public static String d = "test";
 //    public static void main(String[] args) {
 //        Test2 test2 = new Test2();
 //    }
 
 
-
-    public static void test2(){
+    public static void test2() {
         Test2 test2 = new Test2();
     }
 

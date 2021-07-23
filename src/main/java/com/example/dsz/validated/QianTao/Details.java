@@ -14,8 +14,8 @@ import javax.validation.constraints.NotNull;
  */
 @Data
 public class Details {
-    @NotNull(message = "详情id不能为空",groups = Order1.class)
+    @NotNull(message = "详情id不能为空", groups = Order1.class)
     private Long id;
-    @NotBlank(message = "详情name不能为空",groups = Order2.class)
+    @NotBlank(message = "详情name不能为空", groups = Order2.class)
     private String name;
 }

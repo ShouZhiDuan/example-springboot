@@ -7,6 +7,6 @@ package com.example.dsz.jdk_cglib_proxy.jdk;
  */
 public interface TestHandlerService {
 
-      String say();
+    String say();
 
 }

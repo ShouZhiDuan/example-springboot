@@ -11,7 +11,7 @@ public class JvmTest {
         //new Person();
     }
 
-    public void test(){
+    public void test() {
         System.out.println();
     }
 

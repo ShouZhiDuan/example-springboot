@@ -11,12 +11,14 @@ import lombok.Setter;
  */
 public enum UserStatus {
 
-    one(1,"录入中"),
-    two(2,"录入完成");
+    one(1, "录入中"),
+    two(2, "录入完成");
 
-    @Getter @Setter
+    @Getter
+    @Setter
     private int code;
-    @Getter @Setter
+    @Getter
+    @Setter
     private String msg;
 
     UserStatus(int code, String msg) {

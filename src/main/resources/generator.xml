@@ -5,9 +5,9 @@
 
 <generatorConfiguration>
     <!-- 引入 application.properties -->
-    <properties resource="generate.properties" />
+    <properties resource="generate.properties"/>
     <!-- MyBatis3Simple：不生成 Example相关类及方法 defaultModelType="flat" -->
-    <context id="MysqlContext" targetRuntime="MyBatis3Simple" >
+    <context id="MysqlContext" targetRuntime="MyBatis3Simple">
         <property name="beginningDelimiter" value="`"/>
         <property name="endingDelimiter" value="`"/>
 
@@ -38,7 +38,8 @@
 
         <!-- 生成实体类的包名和位置 ，targetPackage指的是包名,targetProject值得是路径位置-->
         <!-- 对于生成的pojo所在包,pojo其实就是domain Entity-->
-        <javaModelGenerator targetPackage="${generator.javaModel-targetPackage}" targetProject="${generator.targetProject}">
+        <javaModelGenerator targetPackage="${generator.javaModel-targetPackage}"
+                            targetProject="${generator.targetProject}">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
@@ -47,7 +48,8 @@
         <sqlMapGenerator targetPackage="${generator.sqlMap-targetPackage}" targetProject="src/main/resources"/>
 
         <!-- 配置mapper对应的java映射  也可以叫dao层 -->
-        <javaClientGenerator targetPackage="${generator.javaClient-targetPackage}" targetProject="${generator.targetProject}" type="XMLMAPPER"/>
+        <javaClientGenerator targetPackage="${generator.javaClient-targetPackage}"
+                             targetProject="${generator.targetProject}" type="XMLMAPPER"/>
 
         <!-- table可以有多个,每个数据库中的表都可以写一个table，
         tableName表示要匹配的数据库表,也可以在tableName属性中通过使用%通配符来匹配所有数据库表,
@@ -63,6 +65,6 @@
         <table tableName="questions"></table>
         <table tableName="fudan_hpos"></table>
         -->
-        <table tableName="tx_test"></table>
+        <table tableName="test_timestamp_datetime"></table>
     </context>
 </generatorConfiguration>

@@ -13,8 +13,8 @@ import javax.validation.constraints.NotNull;
  */
 @Data
 public class ValidatedDTO {
-    @NotNull(message = "请输入id",groups = Group1.class)
+    @NotNull(message = "请输入id", groups = Group1.class)
     private Long id;
-    @NotBlank(message = "请输入名称",groups = {Group1.class,Group2.class})
+    @NotBlank(message = "请输入名称", groups = {Group1.class, Group2.class})
     private String name;
 }

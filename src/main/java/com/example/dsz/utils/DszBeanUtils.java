@@ -17,7 +17,7 @@ import java.util.Set;
  */
 public class DszBeanUtils implements ApplicationContextAware {
 
-    private static  ApplicationContext applicationContext;
+    private static ApplicationContext applicationContext;
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
@@ -30,11 +30,11 @@ public class DszBeanUtils implements ApplicationContextAware {
         return object;
     }
 
-    public static String[] getNullPropertyNames (Object source) {
+    public static String[] getNullPropertyNames(Object source) {
         final BeanWrapper src = new BeanWrapperImpl(source);
         java.beans.PropertyDescriptor[] pds = src.getPropertyDescriptors();
         Set<String> emptyNames = new HashSet<String>();
-        for(java.beans.PropertyDescriptor pd : pds) {
+        for (java.beans.PropertyDescriptor pd : pds) {
             Object srcValue = src.getPropertyValue(pd.getName());
             if (srcValue == null) emptyNames.add(pd.getName());
         }
@@ -45,13 +45,9 @@ public class DszBeanUtils implements ApplicationContextAware {
     /**
      * 过滤为空的字段就不赋值
      */
-    public static void copyPropertiesIgnoreNull(Object src, Object target){
+    public static void copyPropertiesIgnoreNull(Object src, Object target) {
         BeanUtils.copyProperties(src, target, getNullPropertyNames(src));
     }
-
-
-
-
 
 
 }

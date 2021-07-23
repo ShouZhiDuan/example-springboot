@@ -8,12 +8,12 @@ import java.util.concurrent.atomic.AtomicReference;
  * @Description:
  */
 public class TestAB {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Object lock = new Object();
         AtomicReference<Boolean> flage = new AtomicReference<>(true);
         Thread threadA = new Thread(() -> {
-            while (true){
-                if(flage.get()){
+            while (true) {
+                if (flage.get()) {
                     synchronized (lock) {
                         try {
                             System.out.println("A");
@@ -27,8 +27,8 @@ public class TestAB {
             }
         });
         Thread threadB = new Thread(() -> {
-            while (true){
-                if(!flage.get()){
+            while (true) {
+                if (!flage.get()) {
                     synchronized (lock) {
                         System.out.println("B");
                         lock.notify();
@@ -40,14 +40,6 @@ public class TestAB {
         threadA.start();
         threadB.start();
     }
-
-
-
-
-
-
-
-
 
 
 }

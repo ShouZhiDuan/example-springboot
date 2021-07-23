@@ -13,7 +13,7 @@ import java.io.IOException;
 public class ReadFileTest {
 
     @Test
-    public void  readFile() throws IOException {
+    public void readFile() throws IOException {
         //当前项目下路径
         File file = new File("");
         String filePath = file.getCanonicalPath();
@@ -27,9 +27,9 @@ public class ReadFileTest {
 
 
     @Test
-    public void test2(){
+    public void test2() {
         Byte by = 0;
-        System.out.println(by==0);
+        System.out.println(by == 0);
     }
 
 

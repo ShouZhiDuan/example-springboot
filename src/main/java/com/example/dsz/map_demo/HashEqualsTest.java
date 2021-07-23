@@ -45,6 +45,6 @@ public class HashEqualsTest {
 //        System.out.println("dsz3.equals(dsz4)=" + dsz3.equals(dsz4));
 
         HashMap<Object, Object> map = new HashMap<>();
-        map.put(11,"test");
+        map.put(11, "test");
     }
 }

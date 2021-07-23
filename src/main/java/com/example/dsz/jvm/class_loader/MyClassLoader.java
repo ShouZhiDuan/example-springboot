@@ -1,6 +1,7 @@
 package com.example.dsz.jvm.class_loader;
 
 import lombok.Data;
+
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -15,7 +16,7 @@ import java.util.List;
  * @Description:
  */
 @Data
-public class MyClassLoader  extends ClassLoader{
+public class MyClassLoader extends ClassLoader {
 
     private String root;
 
@@ -37,11 +38,11 @@ public class MyClassLoader  extends ClassLoader{
             int bufferSize = 1024;
             byte[] buffer = new byte[bufferSize];
             int length = 0;
-            while ((length = ins.read(buffer)) != -1){
-                  baos.write(buffer,0,length);
+            while ((length = ins.read(buffer)) != -1) {
+                baos.write(buffer, 0, length);
             }
             return baos.toByteArray();
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
@@ -56,12 +57,9 @@ public class MyClassLoader  extends ClassLoader{
         Class<?> aClass = myClassLoader.loadClass("test_pack.TestLoader");
         Method testDo = aClass.getMethod("main", String[].class);
         //注意这里调用main函数传入的string[]参数要转换成一个整体，否则会当期做多个参数拆开传入，出现wrong number of arguments
-        testDo.invoke(null,(Object)new String[]{"123", "456"});
+        testDo.invoke(null, (Object) new String[]{"123", "456"});
         System.out.println();
     }
-
-
-
 
 
 }

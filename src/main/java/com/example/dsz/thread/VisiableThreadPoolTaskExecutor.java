@@ -18,9 +18,9 @@ public class VisiableThreadPoolTaskExecutor extends ThreadPoolTaskExecutor {
 
     private static final Logger logger = LoggerFactory.getLogger(VisiableThreadPoolTaskExecutor.class);
 
-    private void showThreadPoolInfo(String prefix){
+    private void showThreadPoolInfo(String prefix) {
         ThreadPoolExecutor threadPoolExecutor = getThreadPoolExecutor();
-        if(null==threadPoolExecutor){
+        if (null == threadPoolExecutor) {
             return;
         }
         logger.info("{}, {},任务总数 [{}], 已完成任务数 [{}], 活跃数量 [{}], 队列数量 [{}]",

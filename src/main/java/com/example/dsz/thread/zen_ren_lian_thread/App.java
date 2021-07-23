@@ -9,13 +9,13 @@ public class App {
 
     static IVacateAuth iVacateAuth;
 
-    void setUp(){
+    void setUp() {
         Teacher2Auth teacher2Auth = new Teacher2Auth();
         teacher2Auth.start();
         Teacher1Auth teacher1Auth = new Teacher1Auth(teacher2Auth);
         teacher1Auth.start();
         iVacateAuth = new SelfAuth(teacher1Auth);
-        ((SelfAuth)iVacateAuth).start();
+        ((SelfAuth) iVacateAuth).start();
     }
 
     public static void main(String[] args) {

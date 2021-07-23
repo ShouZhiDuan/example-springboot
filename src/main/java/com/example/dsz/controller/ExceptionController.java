@@ -16,26 +16,26 @@ import org.springframework.web.bind.annotation.RestController;
 public class ExceptionController {
 
     @GetMapping("/hello")
-    private Object hello(){
-        return  "你好，段守志！！！！！！";
+    private Object hello() {
+        return "你好，段守志！！！！！！";
     }
 
     @GetMapping("/test")
-    private void test(){
-             test2();
+    private void test() {
+        test2();
     }
 
 
-   private void test2(){
-       try {
-           test3();
-       } catch (Exception e) {
-           e.printStackTrace();
-       }
-   }
+    private void test2() {
+        try {
+            test3();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
-    private void test3(){
-       throw new GlobalException(GlobalExceptionCodeEnum.TOKEN_EXCEPTION_CODE);
+    private void test3() {
+        throw new GlobalException(GlobalExceptionCodeEnum.TOKEN_EXCEPTION_CODE);
     }
 
 }

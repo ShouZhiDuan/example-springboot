@@ -14,15 +14,11 @@ public class Ttest<T> {
     private T note;
 
     public static void main(String[] args) {
-         //编译的时候就明确类型，防止编译漏洞
-         Ttest<String> ttest = new Ttest();
-         ttest.setNote("test");
-         System.out.println(JSON.toJSONString(ttest));
+        //编译的时候就明确类型，防止编译漏洞
+        Ttest<String> ttest = new Ttest();
+        ttest.setNote("test");
+        System.out.println(JSON.toJSONString(ttest));
     }
-
-
-
-
 
 
 }

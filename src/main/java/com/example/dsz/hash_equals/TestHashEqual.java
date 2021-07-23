@@ -33,7 +33,7 @@ public class TestHashEqual {
     public static void main(String[] args) {
         TestHashEqual dsz1 = new TestHashEqual(1, "dsz");
         TestHashEqual dsz2 = new TestHashEqual(1, "dsz");
-        System.out.println(dsz1==dsz2);
+        System.out.println(dsz1 == dsz2);
 
         Class<TestHashEqual> testHashEqualClass = TestHashEqual.class;
         System.out.println(testHashEqualClass);
@@ -61,16 +61,12 @@ public class TestHashEqual {
          * 只有以上两者都相等才算key是同一个key.
          */
         HashMap<TestHashEqual, Object> objectObjectHashMap = new HashMap<>();
-        objectObjectHashMap.put(dsz1,1);
-        objectObjectHashMap.put(dsz2,2);
+        objectObjectHashMap.put(dsz1, 1);
+        objectObjectHashMap.put(dsz2, 2);
         System.out.println();
 
 
-
-
-
     }
-
 
 
 }

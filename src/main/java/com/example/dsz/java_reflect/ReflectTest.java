@@ -13,14 +13,13 @@ import java.lang.reflect.Method;
 public class ReflectTest {
 
     @Test
-    public void test1(){
+    public void test1() {
         Class<Demo> demoClass = Demo.class;
         Method[] declaredMethods = demoClass.getDeclaredMethods();
         Constructor<?>[] constructors = demoClass.getConstructors();
         System.out.println(declaredMethods);
         System.out.println(constructors);
     }
-
 
 
 }

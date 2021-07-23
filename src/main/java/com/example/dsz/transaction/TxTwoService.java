@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class TxTwoService {
 
     @Transactional(propagation = Propagation.NEVER)
-    public void  insert(TxTest txTestAdd, TxTestMapper txTestMapper){
+    public void insert(TxTest txTestAdd, TxTestMapper txTestMapper) {
         txTestMapper.insert(txTestAdd);
     }
 

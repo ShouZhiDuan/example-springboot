@@ -16,7 +16,7 @@ public class TestStatic {
 
     public int c;
 
-    public final static   List<Integer> list = Arrays.asList(1);
+    public final static List<Integer> list = Arrays.asList(1);
 
 
     public static void main(String[] args) {
@@ -25,17 +25,12 @@ public class TestStatic {
     }
 
 
-    public void test2(){
+    public void test2() {
         TestStatic testStatic = new TestStatic();
     }
 
-    public static void test3(){
+    public static void test3() {
     }
-
-
-
-
-
 
 
 }

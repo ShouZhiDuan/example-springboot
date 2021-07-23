@@ -13,10 +13,10 @@ import javax.validation.constraints.NotNull;
 @Data
 public class OrderDTO {
 
-    @NotNull(message = "请输入ID",groups = Order1.class)
+    @NotNull(message = "请输入ID", groups = Order1.class)
     private Integer id;
 
-    @NotBlank(message = "请输入name",groups = Order2.class)
+    @NotBlank(message = "请输入name", groups = Order2.class)
     private String name;
 
 }

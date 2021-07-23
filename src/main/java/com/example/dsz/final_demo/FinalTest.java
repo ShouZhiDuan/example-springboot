@@ -12,7 +12,7 @@ public class FinalTest {
         //final修饰的无法修改
     }
 
-    private  void testDo(){
+    private void testDo() {
 
     }
 }

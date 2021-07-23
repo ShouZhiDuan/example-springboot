@@ -38,8 +38,8 @@ public abstract class AbstractPropertySourceDetector implements PropertySourceDe
     private String findPropertySource(MutablePropertySources sources) {
         if (
                 ClassUtils.isPresent(SERVLET_ENVIRONMENT_CLASS, null)
-                &&
-                sources.contains(StandardServletEnvironment.JNDI_PROPERTY_SOURCE_NAME)
+                        &&
+                        sources.contains(StandardServletEnvironment.JNDI_PROPERTY_SOURCE_NAME)
         ) {
             return StandardServletEnvironment.JNDI_PROPERTY_SOURCE_NAME;
         }

@@ -10,12 +10,12 @@ import org.junit.Test;
  */
 public class TestDemo {
     @Test
-    public void test1(){
-        System.out.println(System.currentTimeMillis() + 10*60*1000);
+    public void test1() {
+        System.out.println(System.currentTimeMillis() + 10 * 60 * 1000);
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         System.out.println(AccountType.valueOf("GENERAL").getType());
     }
 }

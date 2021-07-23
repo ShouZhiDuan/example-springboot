@@ -17,6 +17,7 @@ public class MapMainTest {
      * ConcurrentHash
      * LinkenHashMap
      * TreeMap
+     *
      * @param args
      */
     public static void main(String[] args) {
@@ -31,19 +32,19 @@ public class MapMainTest {
 //        MapMainTest[] tests = new MapMainTest[2147483647];
 
         var map = new HashMap<>();
-        map.put("abc","dsz");
-        map.put("abc","dsz");
+        map.put("abc", "dsz");
+        map.put("abc", "dsz");
     }
 
-    public void test(){
-
-    }
-
-    public class Test1{
+    public void test() {
 
     }
 
-    public static class Test2{
+    public class Test1 {
+
+    }
+
+    public static class Test2 {
 
     }
 

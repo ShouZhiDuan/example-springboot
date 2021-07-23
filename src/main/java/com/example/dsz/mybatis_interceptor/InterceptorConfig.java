@@ -13,12 +13,12 @@ import tk.mybatis.mapper.autoconfigure.ConfigurationCustomizer;
 public class InterceptorConfig {
 
     @Bean
-    public ExecutorInterceptor executorInterceptor(){
-       return new ExecutorInterceptor();
+    public ExecutorInterceptor executorInterceptor() {
+        return new ExecutorInterceptor();
     }
 
     @Bean
-    public StatementHandlerInterceptor statementHandlerInterceptor(){
+    public StatementHandlerInterceptor statementHandlerInterceptor() {
         return new StatementHandlerInterceptor();
     }
 
@@ -28,12 +28,12 @@ public class InterceptorConfig {
 //    }
 
     @Bean
-    public ConfigurationCustomizer configurationCustomizer(){
+    public ConfigurationCustomizer configurationCustomizer() {
         return configuration -> {
-              configuration.setAggressiveLazyLoading(true);
-              configuration.addInterceptor(executorInterceptor());//拦截器1
-              configuration.addInterceptor(statementHandlerInterceptor());//拦截器2
-             // configuration.addInterceptor(parameterHandlerInterceptor());//拦截器3
+            configuration.setAggressiveLazyLoading(true);
+            configuration.addInterceptor(executorInterceptor());//拦截器1
+            configuration.addInterceptor(statementHandlerInterceptor());//拦截器2
+            // configuration.addInterceptor(parameterHandlerInterceptor());//拦截器3
         };
     }
 

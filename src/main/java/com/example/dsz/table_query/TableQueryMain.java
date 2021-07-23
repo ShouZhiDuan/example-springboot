@@ -2,6 +2,7 @@ package com.example.dsz.table_query;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -46,10 +47,11 @@ public class TableQueryMain {
 
     /**
      * 关闭数据库连接
+     *
      * @param conn
      */
     public static void closeConnection(Connection conn) {
-        if(conn != null) {
+        if (conn != null) {
             try {
                 conn.close();
             } catch (SQLException e) {
@@ -69,8 +71,8 @@ public class TableQueryMain {
             //获取数据库的元数据
             DatabaseMetaData db = conn.getMetaData();
             //从元数据中获取到所有的表名
-            rs = db.getTables(null, null, null, new String[] { "TABLE" });
-            while(rs.next()) {
+            rs = db.getTables(null, null, null, new String[]{"TABLE"});
+            while (rs.next()) {
                 tableNames.add(rs.getString(3));
             }
         } catch (SQLException e) {
@@ -88,6 +90,7 @@ public class TableQueryMain {
 
     /**
      * 获取表中所有字段名称
+     *
      * @param tableName 表名
      * @return
      */
@@ -123,6 +126,7 @@ public class TableQueryMain {
 
     /**
      * 获取表中所有字段类型
+     *
      * @param tableName
      * @return
      */
@@ -158,6 +162,7 @@ public class TableQueryMain {
 
     /**
      * 获取表中字段的所有注释
+     *
      * @param tableName
      * @return
      */
@@ -189,6 +194,7 @@ public class TableQueryMain {
         }
         return columnComments;
     }
+
     public static void main(String[] args) {
         List<String> tableNames = getTableNames();
         System.out.println("tableNames:" + tableNames);

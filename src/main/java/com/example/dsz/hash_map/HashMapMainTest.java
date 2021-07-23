@@ -31,7 +31,7 @@ public class HashMapMainTest {
 //        vector.addElement(1);
 
 
-        HashMap<Object, Object> map = new HashMap<>(32,1);
+        HashMap<Object, Object> map = new HashMap<>(32, 1);
 //        int i = 1;
 //        do {
 //            map.put(i+"ab",i);
@@ -47,8 +47,8 @@ public class HashMapMainTest {
 //        key=15ab
 //        18
 
-        map.put("15ab",1);
-        map.put("1ab",1);
+        map.put("15ab", 1);
+        map.put("1ab", 1);
 
 
         Set<Map.Entry<Object, Object>> entries = map.entrySet();
@@ -63,7 +63,7 @@ public class HashMapMainTest {
             //System.out.println("0".hashCode());
             int h;
             int hash = (h = key.hashCode()) ^ (h >>> 16);
-            System.out.println(hash&(32-1));
+            System.out.println(hash & (32 - 1));
             System.out.println("hash=" + hash);
         }
 
@@ -72,19 +72,20 @@ public class HashMapMainTest {
 
     }
 
-    public static void test1(){
+    public static void test1() {
         long l1 = System.currentTimeMillis();
         HashMap<String, String> map = new HashMap<>();
-        map.put("test1","test1");
+        map.put("test1", "test1");
         long l2 = System.currentTimeMillis();
-        System.out.println("test1=" + (l2-l1));
+        System.out.println("test1=" + (l2 - l1));
     }
-    public static void test2(){
+
+    public static void test2() {
         long l1 = System.currentTimeMillis();
-        HashMap<String, String> map = new HashMap<>(1<<31,1);
-        map.put("test2","test2");
+        HashMap<String, String> map = new HashMap<>(1 << 31, 1);
+        map.put("test2", "test2");
         long l2 = System.currentTimeMillis();
-        System.out.println("test2=" + (l2-l1));
+        System.out.println("test2=" + (l2 - l1));
     }
 
 }

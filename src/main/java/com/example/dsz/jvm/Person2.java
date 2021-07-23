@@ -9,7 +9,7 @@ public class Person2 {
 
     private String name;
 
-    public void test(){
-           final  Integer a ;
+    public void test() {
+        final Integer a;
     }
 }

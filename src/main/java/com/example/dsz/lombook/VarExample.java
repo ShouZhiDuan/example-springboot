@@ -11,8 +11,8 @@ import java.net.UnknownHostException;
 public class VarExample {
     public static void main(String[] args) throws UnknownHostException {
         InetAddress addr = InetAddress.getLocalHost();
-        System.out.println("Local HostAddress: "+addr.getHostAddress());
+        System.out.println("Local HostAddress: " + addr.getHostAddress());
         String hostname = addr.getHostName();
-        System.out.println("Local host name: "+hostname);
+        System.out.println("Local host name: " + hostname);
     }
 }

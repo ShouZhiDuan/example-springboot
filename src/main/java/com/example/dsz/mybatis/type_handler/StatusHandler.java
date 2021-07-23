@@ -20,13 +20,13 @@ import java.sql.SQLException;
 public class StatusHandler extends BaseTypeHandler<UserStatus> {
     @Override
     public void setNonNullParameter(PreparedStatement ps, int i, UserStatus parameter, JdbcType jdbcType) throws SQLException {
-            ps.setInt(i,parameter.getCode());
+        ps.setInt(i, parameter.getCode());
     }
 
     @Override
     public UserStatus getNullableResult(ResultSet rs, String columnName) throws SQLException {
         int code = rs.getInt(columnName);
-        if(code==1){
+        if (code == 1) {
             return UserStatus.one;
         }
         return null;

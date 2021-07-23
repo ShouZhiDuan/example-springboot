@@ -12,7 +12,7 @@ public class AnnotationMainTest {
 
     private final String name = "duan";
 
-    public void test(){
+    public void test() {
         System.out.println(name);
     }
 

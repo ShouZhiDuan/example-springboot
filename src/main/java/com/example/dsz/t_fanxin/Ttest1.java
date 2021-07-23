@@ -16,24 +16,24 @@ public class Ttest1 {
 
     private int lev;
 
-    class Cat{
+    class Cat {
         private String name;
     }
 
-    static class Animals{
+    static class Animals {
         private int leg;
     }
 
-    class Dog extends Animals{
-        private String color = lev+"";
+    class Dog extends Animals {
+        private String color = lev + "";
     }
 
-    private static int countLegs(List<Animals> animals){
+    private static int countLegs(List<Animals> animals) {
         System.out.println("to do List<Animals> animals");
         return 2;
     }
 
-    private static int countLegs1(List<? extends Animals> animals){
+    private static int countLegs1(List<? extends Animals> animals) {
         System.out.println("to do List<? extends Animals> animals");
         return 2;
     }
@@ -50,7 +50,7 @@ public class Ttest1 {
         Class<DeafaultClass.JsonData> jsonDataClass = DeafaultClass.JsonData.class;
         Class<DeafaultClass> deafaultClassClass = DeafaultClass.class;
         Constructor<?>[] constructors = deafaultClassClass.getConstructors();
-        for(Constructor constructor : constructors){
+        for (Constructor constructor : constructors) {
             String name = constructor.getName();
             System.out.println("构造函数名称：" + name);
             System.out.println("构造函数：" + constructor);

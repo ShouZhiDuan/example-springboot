@@ -9,10 +9,12 @@ public enum AccountType {
     GENERAL("GENERAL"),//普通
     ADMINISTRATOR("ADMINISTRATOR")//管理员
     ;
-    private  String type;
-    AccountType(String type){
-           this.type = type;
+    private String type;
+
+    AccountType(String type) {
+        this.type = type;
     }
+
     public String getType() {
         return this.type;
     }

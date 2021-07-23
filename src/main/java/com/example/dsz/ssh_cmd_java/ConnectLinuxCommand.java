@@ -47,15 +47,14 @@ public class ConnectLinuxCommand {
     }
 
     /**
-     *
-     * @Title: processStdout
-     * @Description: 解析脚本执行的返回结果
-     * @param in 输入流对象
+     * @param in      输入流对象
      * @param charset 编码
      * @return String 以纯文本的格式返回
      * @throws
+     * @Title: processStdout
+     * @Description: 解析脚本执行的返回结果
      */
-    public static String processStdout(InputStream in, String charset){
+    public static String processStdout(InputStream in, String charset) {
         InputStream stdout = new StreamGobbler(in);
         StringBuffer buffer = new StringBuffer();
         try {
@@ -75,12 +74,12 @@ public class ConnectLinuxCommand {
     /**
      * 执行脚本
      */
-    public static String doCmd(String cmd, File keyFile, String ip, String userName){
+    public static String doCmd(String cmd, File keyFile, String ip, String userName) {
         String result = "";
         RemoteConnect connect = new RemoteConnect();
         connect.setIp(ip);
         connect.setUserName(userName);
-        Boolean flag = loginByFileKey(connect,keyFile,null);
+        Boolean flag = loginByFileKey(connect, keyFile, null);
         log.info("连接服务器授权结果：" + (flag == true ? "授权成功" + flag : "授权失败" + flag));
         Session session = null;
         try {
@@ -94,11 +93,11 @@ public class ConnectLinuxCommand {
         } catch (IOException e) {
             e.printStackTrace();
             log.error("shell命令[" + cmd + "]" + "执行异常");
-        }finally {
-            if(conn != null){
+        } finally {
+            if (conn != null) {
                 conn.close();
             }
-            if(session != null){
+            if (session != null) {
                 session.close();
             }
         }
@@ -111,7 +110,7 @@ public class ConnectLinuxCommand {
         RemoteConnect connect = new RemoteConnect();
         connect.setIp("local.nvxclouds.net");
         connect.setUserName("ubuntu");
-        loginByFileKey(connect,keyfile,null);
+        loginByFileKey(connect, keyfile, null);
         return conn.openSession();
     }
 
@@ -120,91 +119,89 @@ public class ConnectLinuxCommand {
      * https://vimsky.com/examples/detail/java-method-com.trilead.ssh2.Session.execCommand.html
      */
     public static void main(String[] args) throws IOException {
-                String cmdCpu = "top -b -n 1 | grep %Cpu";
-                String cmdMem = "free -m | grep Mem";
-                String cmdPing = "ping $1 -c 3 | grep time=";
-                String testCmd = "cd /home/ubuntu;ls";
-                String lscpu = "lscpu";
+        String cmdCpu = "top -b -n 1 | grep %Cpu";
+        String cmdMem = "free -m | grep Mem";
+        String cmdPing = "ping $1 -c 3 | grep time=";
+        String testCmd = "cd /home/ubuntu;ls";
+        String lscpu = "lscpu";
 
-                String cpuIdCMD = "sudo dmidecode -t processor | grep 'ID'";
-                String mainboardNumberCMD  = "sudo dmidecode |grep 'Serial Number'";
-                String macCMD   = "sudo cat /sys/class/net/eth0/address";
-                /**
-                 * 1、处理cpuid
-                 */
-                System.out.println("==============================处理CPU-ID===============================");
-                String cpuIdString = doCMD(cpuIdCMD);
-                System.out.println("cpuId数据如下======>>>>>>");
-                System.out.println(cpuIdString);
-                List<String> cpuIdList = new ArrayList<>();
-                if(!StringUtils.isEmpty(cpuIdString)){
-                    if(cpuIdString.contains("\n")){
-                       String[] cpuIdStrings = cpuIdString.split("\n");
-                       for (String cpuIdStr : cpuIdStrings){
-                           if(cpuIdStr.contains("\tID: ")){
-                               String realCpuId = cpuIdStr.replace("\tID: ","");
-                               cpuIdList.add(realCpuId);
-                               System.out.println(realCpuId);
-                           }
-                       }
-                    }else {
-                        //不含有“\n”符号 但是含有“ID: ”
-                        if(cpuIdString.contains("\tID: ") ){
-                            String realCpuId = cpuIdString.replace("\tID: ","");
-                            cpuIdList.add(realCpuId);
-                            System.out.println(realCpuId);
-                        }
-                    }
-                }
-                System.out.println(JSON.toJSONString(cpuIdList));
-                /**
-                 * 2、处理主板信息
-                 */
-                System.out.println("==============================处理主板序号===============================");
-                String mainboardNumberString = doCMD(mainboardNumberCMD);
-                System.out.println(mainboardNumberString);
-                List<String> mainBoardList = new ArrayList<>();
-                if(!StringUtils.isEmpty(mainboardNumberString)){
-                    //如果主板信息不为空
-                    if(mainboardNumberString.contains("\n")){
-                        String[] mainBoards =  mainboardNumberString.split("\n");
-                        for (String board : mainBoards){
-                            mainBoardList.add(board.replace("\tSerial Number: ",""));
-                        }
-                    }
-                }
-                mainBoardList = mainBoardList.stream().filter(board -> !board.equals("Not Specified")).collect(Collectors.toList());
-                System.out.println(JSON.toJSONString(mainBoardList));
-                /**
-                 * 3、处理mac地址
-                 */
-                System.out.println("==============================处理mac地址===============================");
-                String macString = doCMD(macCMD);
-                if(!StringUtils.isEmpty(macString)){
-                    if(macString.contains("\n")){
-                        macString = macString.replaceAll("\n","");
-                    }
-                }
-                System.out.println(macString);
-
-
-
-
-
-        }
-
+        String cpuIdCMD = "sudo dmidecode -t processor | grep 'ID'";
+        String mainboardNumberCMD = "sudo dmidecode |grep 'Serial Number'";
+        String macCMD = "sudo cat /sys/class/net/eth0/address";
         /**
-         *  获取CPU_ID
+         * 1、处理cpuid
          */
-        public static String doCMD(String cmd) throws IOException {
-            Session session = getSession();
-            String result = "";
-            session.execCommand(cmd);
-            result = processStdout(session.getStdout(), DEFAULTCHARTSET);
-            if (StringUtils.isEmpty(result)){result = processStdout(session.getStderr(), DEFAULTCHARTSET);}
-            return result;
+        System.out.println("==============================处理CPU-ID===============================");
+        String cpuIdString = doCMD(cpuIdCMD);
+        System.out.println("cpuId数据如下======>>>>>>");
+        System.out.println(cpuIdString);
+        List<String> cpuIdList = new ArrayList<>();
+        if (!StringUtils.isEmpty(cpuIdString)) {
+            if (cpuIdString.contains("\n")) {
+                String[] cpuIdStrings = cpuIdString.split("\n");
+                for (String cpuIdStr : cpuIdStrings) {
+                    if (cpuIdStr.contains("\tID: ")) {
+                        String realCpuId = cpuIdStr.replace("\tID: ", "");
+                        cpuIdList.add(realCpuId);
+                        System.out.println(realCpuId);
+                    }
+                }
+            } else {
+                //不含有“\n”符号 但是含有“ID: ”
+                if (cpuIdString.contains("\tID: ")) {
+                    String realCpuId = cpuIdString.replace("\tID: ", "");
+                    cpuIdList.add(realCpuId);
+                    System.out.println(realCpuId);
+                }
+            }
         }
+        System.out.println(JSON.toJSONString(cpuIdList));
+        /**
+         * 2、处理主板信息
+         */
+        System.out.println("==============================处理主板序号===============================");
+        String mainboardNumberString = doCMD(mainboardNumberCMD);
+        System.out.println(mainboardNumberString);
+        List<String> mainBoardList = new ArrayList<>();
+        if (!StringUtils.isEmpty(mainboardNumberString)) {
+            //如果主板信息不为空
+            if (mainboardNumberString.contains("\n")) {
+                String[] mainBoards = mainboardNumberString.split("\n");
+                for (String board : mainBoards) {
+                    mainBoardList.add(board.replace("\tSerial Number: ", ""));
+                }
+            }
+        }
+        mainBoardList = mainBoardList.stream().filter(board -> !board.equals("Not Specified")).collect(Collectors.toList());
+        System.out.println(JSON.toJSONString(mainBoardList));
+        /**
+         * 3、处理mac地址
+         */
+        System.out.println("==============================处理mac地址===============================");
+        String macString = doCMD(macCMD);
+        if (!StringUtils.isEmpty(macString)) {
+            if (macString.contains("\n")) {
+                macString = macString.replaceAll("\n", "");
+            }
+        }
+        System.out.println(macString);
 
+
+    }
+
+    /**
+     * 获取CPU_ID
+     */
+    public static String doCMD(String cmd) throws IOException {
+        Session session = getSession();
+        String result = "";
+        session.execCommand(cmd);
+        result = processStdout(session.getStdout(), DEFAULTCHARTSET);
+        if (StringUtils.isEmpty(result)) {
+            result = processStdout(session.getStderr(), DEFAULTCHARTSET);
+        }
+        return result;
+    }
 
 
 }

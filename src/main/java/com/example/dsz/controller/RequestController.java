@@ -17,28 +17,25 @@ import javax.persistence.Id;
 public class RequestController {
 
 
-
     @PostMapping("/post")
-    public Object testPost(@RequestParam String name){
+    public Object testPost(@RequestParam String name) {
         return name;
     }
 
 
     @PostMapping("/post2")
-    public Object testPost2(TestQuery query){
+    public Object testPost2(TestQuery query) {
         return query;
     }
 
 
     @PostMapping("/post3")
-    public Object testPost3(@RequestBody TestParam param){
+    public Object testPost3(@RequestBody TestParam param) {
         return JSON.toJSONString(param);
     }
 
 
-
-
-    enum TestStatus{
+    enum TestStatus {
         one(1),
         two(2);
 
@@ -47,20 +44,21 @@ public class RequestController {
         TestStatus(int code) {
             this.code = code;
         }
+
         public int getCode() {
             return code;
         }
+
         public void setCode(int code) {
             this.code = code;
         }
     }
 
-   @Data
-   static class TestParam{
-          private int Id;
-          private TestStatus status;
-   }
-
+    @Data
+    static class TestParam {
+        private int Id;
+        private TestStatus status;
+    }
 
 
 }

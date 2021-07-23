@@ -13,6 +13,7 @@ import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
@@ -37,18 +38,18 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(value = MethodArgumentNotValidException.class)
     @ResponseBody
-    public SkadiResult<Object> validationBodyException(MethodArgumentNotValidException exception){
+    public SkadiResult<Object> validationBodyException(MethodArgumentNotValidException exception) {
         exception.printStackTrace();
         BindingResult bindingResult = exception.getBindingResult();
-        return responseValidate(GlobalExceptionCodeEnum.PARAMS_VALIDATED_CODE.getCode(),getBindingResult(bindingResult));
+        return responseValidate(GlobalExceptionCodeEnum.PARAMS_VALIDATED_CODE.getCode(), getBindingResult(bindingResult));
     }
 
     @ExceptionHandler(value = BindException.class)
     @ResponseBody
-    public SkadiResult<Object> validationBodyException(BindException exception){
+    public SkadiResult<Object> validationBodyException(BindException exception) {
         exception.printStackTrace();
         BindingResult bindingResult = exception.getBindingResult();
-        return responseValidate(GlobalExceptionCodeEnum.PARAMS_VALIDATED_CODE.getCode(),getBindingResult(bindingResult));
+        return responseValidate(GlobalExceptionCodeEnum.PARAMS_VALIDATED_CODE.getCode(), getBindingResult(bindingResult));
     }
 
     @ExceptionHandler(ConstraintViolationException.class)
@@ -57,31 +58,31 @@ public class GlobalExceptionHandler {
         Set<ConstraintViolation<?>> violations = e.getConstraintViolations();
         ConstraintViolation<?> violation = violations.iterator().next();
         String message = violation.getMessage();
-        return  responseValidate(GlobalExceptionCodeEnum.PARAMS_VALIDATED_CODE.getCode(),message);
+        return responseValidate(GlobalExceptionCodeEnum.PARAMS_VALIDATED_CODE.getCode(), message);
     }
 
     @ExceptionHandler(MissingServletRequestParameterException.class)
     public SkadiResult<Object> missingServletRequestParameterException(MissingServletRequestParameterException e) {
         e.printStackTrace();
-        MissingServletRequestParameterException ex = (MissingServletRequestParameterException)e;
-        return  responseValidate(GlobalExceptionCodeEnum.PARAMS_VALIDATED_CODE.getCode(),ex.getParameterName() + "不能为空！");
+        MissingServletRequestParameterException ex = (MissingServletRequestParameterException) e;
+        return responseValidate(GlobalExceptionCodeEnum.PARAMS_VALIDATED_CODE.getCode(), ex.getParameterName() + "不能为空！");
     }
 
     @ExceptionHandler(HttpRequestMethodNotSupportedException.class)
     public SkadiResult<Object> httpRequestMethodNotSupportedException(HttpRequestMethodNotSupportedException e, HttpServletRequest request) {
         e.printStackTrace();
-        return  responseValidate(GlobalExceptionCodeEnum.PARAMS_VALIDATED_CODE.getCode(),"不能用" + request.getMethod() + "方式请求，请检查接口具体请求方式post?get?put?delete? or others");
+        return responseValidate(GlobalExceptionCodeEnum.PARAMS_VALIDATED_CODE.getCode(), "不能用" + request.getMethod() + "方式请求，请检查接口具体请求方式post?get?put?delete? or others");
     }
 
     private SkadiResult<Object> response(GlobalException exceptionEnum) {
-        return  responseValidate(exceptionEnum.getGlobalExceptionCodeEnum().getCode(),exceptionEnum.getGlobalExceptionCodeEnum().getMsg());
+        return responseValidate(exceptionEnum.getGlobalExceptionCodeEnum().getCode(), exceptionEnum.getGlobalExceptionCodeEnum().getMsg());
     }
 
     private SkadiResult<Object> responseValidate(Integer code, String msg) {
         return SkadiResult.builder().code(code).msg(msg).build();
     }
 
-    private String getBindingResult(BindingResult bindingResult){
+    private String getBindingResult(BindingResult bindingResult) {
         List<ObjectError> list = bindingResult.getAllErrors();
         return CollectionUtils.isEmpty(list) ? "" : list.get(0).getDefaultMessage().toString();
     }

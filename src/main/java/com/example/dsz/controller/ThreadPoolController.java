@@ -27,13 +27,10 @@ public class ThreadPoolController {
 
 
     @GetMapping("/do")
-    public Object testThread(String msg){
+    public Object testThread(String msg) {
         String result = testService.testDo(msg);
         return result;
     }
-
-
-
 
 
 }

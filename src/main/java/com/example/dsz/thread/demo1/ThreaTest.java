@@ -11,6 +11,7 @@ public class ThreaTest {
     static {
         System.out.println("00000000000000000000000");
     }
+
     public static void main(String[] args) {
 //        new Thread(() -> {
 //            //run to do
@@ -45,7 +46,7 @@ public class ThreaTest {
 //           ThreaTest threaTest2 = new ThreaTest();
         new Thread(
                 () -> {
-                    while (true){
+                    while (true) {
                         System.out.println("继续跑，迎着眼泪和嘲笑。。。。。。");
                     }
                 }).start();

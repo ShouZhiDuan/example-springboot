@@ -23,7 +23,7 @@ public class ValidTestController {
      * 分组验证
      */
     @PostMapping("/test")
-    public Object test(@Validated({Group2.class}) @RequestBody ValidatedDTO validDTO){
+    public Object test(@Validated({Group2.class}) @RequestBody ValidatedDTO validDTO) {
         return validDTO;
     }
 
@@ -31,7 +31,7 @@ public class ValidTestController {
      * 顺序验证
      */
     @PostMapping("/test2")
-    public Object test2(@Validated({SequnceGroup.class}) @RequestBody OrderDTO orderDTO){
+    public Object test2(@Validated({SequnceGroup.class}) @RequestBody OrderDTO orderDTO) {
         return orderDTO;
     }
 
@@ -40,7 +40,7 @@ public class ValidTestController {
      * 嵌套验证 + 顺序验证
      */
     @PostMapping("/test3")
-    public Object test3(@Validated(SequnceGroup.class) @RequestBody Item item){
+    public Object test3(@Validated(SequnceGroup.class) @RequestBody Item item) {
         return item;
     }
 

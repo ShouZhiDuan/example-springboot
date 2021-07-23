@@ -10,6 +10,6 @@ import java.util.Hashtable;
 public class TestMain2 {
     public static void main(String[] args) {
         Hashtable<Object, Object> objectObjectHashtable = new Hashtable<>();
-        objectObjectHashtable.put("test","");
+        objectObjectHashtable.put("test", "");
     }
 }

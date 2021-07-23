@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import us.codecraft.webmagic.ResultItems;
 import us.codecraft.webmagic.Task;
 import us.codecraft.webmagic.pipeline.Pipeline;
+
 import java.util.List;
 
 /**
@@ -51,15 +52,15 @@ public class DataPipeline implements Pipeline {
 //         }
         List<FudanHpos> hpos = resultItems.get("hpos");
         System.out.println("爬取的数据数量=" + hpos.size());
-        if(hpos != null && hpos.size() > 0){
-             for (FudanHpos hpo : hpos){
-                 try {
-                     hposMapper.insert(hpo);
-                 } catch (Exception e) {
-                     redisTemplate.opsForValue().increment("count");
-                     log.info("库中已存在：" + JSON.toJSONString(hpo));
-                 }
-             }
+        if (hpos != null && hpos.size() > 0) {
+            for (FudanHpos hpo : hpos) {
+                try {
+                    hposMapper.insert(hpo);
+                } catch (Exception e) {
+                    redisTemplate.opsForValue().increment("count");
+                    log.info("库中已存在：" + JSON.toJSONString(hpo));
+                }
+            }
         }
     }
 

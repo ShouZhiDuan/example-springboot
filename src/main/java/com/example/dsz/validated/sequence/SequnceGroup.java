@@ -7,6 +7,6 @@ import javax.validation.GroupSequence;
  * @Date: 2020/11/20 17:21
  * @Description:
  */
-@GroupSequence({Order1.class,Order2.class})
+@GroupSequence({Order1.class, Order2.class})
 public interface SequnceGroup {
 }

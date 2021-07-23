@@ -14,7 +14,7 @@ import javax.persistence.Table;
 @Table(name = "dsz_test")
 public class DszTest {
     @Id
-    @GeneratedValue(generator="JDBC")
+    @GeneratedValue(generator = "JDBC")
     private Integer id;
 
     private String name;

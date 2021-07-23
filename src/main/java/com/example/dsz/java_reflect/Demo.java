@@ -9,7 +9,7 @@ public class Demo {
 
     private String name;
 
-    public  Integer age;
+    public Integer age;
 
     public Demo(String name, Integer age) {
         this.name = name;
@@ -17,7 +17,7 @@ public class Demo {
     }
 
 
-    public void testDo(int a){
+    public void testDo(int a) {
 
     }
 

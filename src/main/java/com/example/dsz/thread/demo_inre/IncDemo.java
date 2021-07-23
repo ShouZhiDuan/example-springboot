@@ -11,46 +11,44 @@ import org.junit.Test;
 @Data
 public class IncDemo {
 
-    private static   Integer a = 0;
+    private static Integer a = 0;
 
-    public static void  incr(){
-        synchronized (IncDemo.class){
+    public static void incr() {
+        synchronized (IncDemo.class) {
             a++;
             System.out.println("最终值======>" + a);
         }
     }
 
-    public IncDemo(int a){
+    public IncDemo(int a) {
 
     }
 
     //针对于具体实例上的锁
-    public synchronized void test(){
+    public synchronized void test() {
         System.out.println();
     }
 
     //全局锁
-    public static synchronized void test2(){
+    public static synchronized void test2() {
         System.out.println();
     }
 
     //实例锁
-   public void test3(){
-        synchronized (this){
+    public void test3() {
+        synchronized (this) {
             System.out.println();
         }
-   }
+    }
 
-   @Test
-   public void test4() throws NoSuchMethodException {
+    @Test
+    public void test4() throws NoSuchMethodException {
         IncDemo[] as = new IncDemo[9];
         System.out.println(as.getClass().getName());
         System.out.println(IncDemo.class.getConstructors().length);
 
 
-   }
-
-
+    }
 
 
 }

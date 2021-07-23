@@ -6,15 +6,14 @@ import lombok.Data;
 /**
  * @Auther: ShouZhi@Duan
  * @Date: 2020/12/8 11:08
- * @Description:
- * DeafaultClass默认修饰符只能在本包中使用
+ * @Description: DeafaultClass默认修饰符只能在本包中使用
  */
 @Data
 class DeafaultClass {
     private int age;
 
     @Data
-    class JsonData{
+    class JsonData {
         private int age;
         private String name;
     }
@@ -27,9 +26,6 @@ class DeafaultClass {
         JsonData jsonData1 = new DeafaultClass().new JsonData();
 
     }
-
-
-
 
 
 }

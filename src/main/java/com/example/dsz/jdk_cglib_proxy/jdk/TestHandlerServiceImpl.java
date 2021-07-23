@@ -11,7 +11,7 @@ public class TestHandlerServiceImpl implements TestHandlerService {
 
     @Override
     public String say() {
-        PageHelper.startPage(1,10);
+        PageHelper.startPage(1, 10);
         System.out.println("======TestHandlerServiceImpl======");
         return "代理返回值";
     }

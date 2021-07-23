@@ -29,8 +29,8 @@ import java.util.regex.Matcher;
  */
 @Slf4j
 @Intercepts(value = {
-        @Signature(type = Executor.class,method = "query",args = {MappedStatement.class, Object.class, RowBounds.class, ResultHandler.class, CacheKey.class, BoundSql.class}),
-        @Signature(type = Executor.class,method = "query",args = {MappedStatement.class, Object.class, RowBounds.class, ResultHandler.class})
+        @Signature(type = Executor.class, method = "query", args = {MappedStatement.class, Object.class, RowBounds.class, ResultHandler.class, CacheKey.class, BoundSql.class}),
+        @Signature(type = Executor.class, method = "query", args = {MappedStatement.class, Object.class, RowBounds.class, ResultHandler.class})
 })
 public class ExecutorInterceptor implements Interceptor {
 
@@ -42,7 +42,7 @@ public class ExecutorInterceptor implements Interceptor {
         log.info("ExecutorInterceptor");
         log.info("==========>>>>>>SQL Intercept<<<<<<==========");
         try {
-            MappedStatement mappedStatement = (MappedStatement)invocation.getArgs()[0];
+            MappedStatement mappedStatement = (MappedStatement) invocation.getArgs()[0];
             Object parameter = null;
             if (invocation.getArgs().length > 1) {
                 parameter = invocation.getArgs()[1];
@@ -54,8 +54,7 @@ public class ExecutorInterceptor implements Interceptor {
             Configuration configuration = mappedStatement.getConfiguration();
             String sql = getSql(configuration, boundSql);
             log.info(("执行SQL = " + sql));
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         Object proceed = invocation.proceed();
@@ -70,7 +69,7 @@ public class ExecutorInterceptor implements Interceptor {
     }
 
     // 如果参数是String，则添加单引号， 如果是日期，则转换为时间格式器并加单引号； 对参数是null和不是null的情况作了处理
-    private static String getParameterValue(Object obj){
+    private static String getParameterValue(Object obj) {
         String value = null;
         if (obj instanceof String) {
             value = "'" + obj.toString() + "'";

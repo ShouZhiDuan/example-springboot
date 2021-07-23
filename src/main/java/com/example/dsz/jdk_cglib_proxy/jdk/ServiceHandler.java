@@ -23,20 +23,21 @@ public class ServiceHandler implements InvocationHandler {
 
     /**
      * 生成代理对象
+     *
      * @return
      */
-    public TestHandlerService proxy(){
-      return (TestHandlerService) Proxy.newProxyInstance(target.getClass().getClassLoader(),target.getClass().getInterfaces(),this);
+    public TestHandlerService proxy() {
+        return (TestHandlerService) Proxy.newProxyInstance(target.getClass().getClassLoader(), target.getClass().getInterfaces(), this);
     }
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("开始代理");
         Class<?> returnType = method.getReturnType();
-        if(returnType==String.class){
+        if (returnType == String.class) {
             System.out.println("返回字符串类型");
         }
-        Object invoke = method.invoke(target,args);
+        Object invoke = method.invoke(target, args);
         System.out.println("结束代理");
         return invoke;
     }

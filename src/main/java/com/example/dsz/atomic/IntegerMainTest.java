@@ -22,13 +22,15 @@ public class IntegerMainTest {
             valueOffset = getUnsafe().objectFieldOffset
                     (AtomicInteger.class.getDeclaredField("value"));
             System.out.println(valueOffset);
-        } catch (Exception ex) { throw new Error(ex); }
+        } catch (Exception ex) {
+            throw new Error(ex);
+        }
     }
 
     public static void main(String[] args) {
         AtomicInteger integer = new AtomicInteger(1);
         boolean a = integer.compareAndSet(1, 2);
-        System.out.println("a="+a);
+        System.out.println("a=" + a);
         //boolean b = integer.compareAndSet(1, 2);
         //System.out.println("b="+b);
         int i = integer.get();
@@ -42,7 +44,6 @@ public class IntegerMainTest {
     public IntegerMainTest(int value) {
         this.value = value;
     }
-
 
 
     public static Unsafe getUnsafe() {

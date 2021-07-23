@@ -21,7 +21,7 @@ import java.util.Properties;
  */
 @Slf4j
 @Intercepts(value = {
-       @Signature(type = StatementHandler.class, method = "prepare", args = {Connection.class, Integer.class})
+        @Signature(type = StatementHandler.class, method = "prepare", args = {Connection.class, Integer.class})
 })
 public class StatementHandlerInterceptor implements Interceptor {
 
@@ -44,9 +44,10 @@ public class StatementHandlerInterceptor implements Interceptor {
 
     /**
      * 通过反射，拦截方法上带有自定义@InterceptAnnotation注解的方法，并增强sql
-     * @param id 方法全路径
+     *
+     * @param id             方法全路径
      * @param sqlCommandType sql类型
-     * @param sql 所执行的sql语句
+     * @param sql            所执行的sql语句
      */
     private String sqlAnnotationEnhance(String id, String sqlCommandType, String sql) throws ClassNotFoundException {
         // 通过类全路径获取Class对象
@@ -72,7 +73,7 @@ public class StatementHandlerInterceptor implements Interceptor {
 
     @Override
     public Object plugin(Object target) {
-        return Plugin.wrap(target,this);
+        return Plugin.wrap(target, this);
     }
 
     @Override

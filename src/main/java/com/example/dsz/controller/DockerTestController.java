@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/test")
 public class DockerTestController {
 
-     @GetMapping("/docker")
-     private Object helloWord(){
+    @GetMapping("/docker")
+    private Object helloWord() {
         return "Hello Docker My Name is ShouZhi@Duan ! ! ! ! ! !";
-     }
+    }
 
 
 }

@@ -43,7 +43,7 @@ public class EpidemicUrlDataProcessor implements PageProcessor {
     public void process(Page page) {
         String source = page.getRawText();
         List<FudanHpos> hpos = new ArrayList<>();
-        if(StringUtils.isNotBlank(source)){
+        if (StringUtils.isNotBlank(source)) {
             Elements select = Jsoup.parse(source).select("table[class=wikitable]");
             select.forEach(element -> {
                 FudanHpos hpo = new FudanHpos();
@@ -54,17 +54,17 @@ public class EpidemicUrlDataProcessor implements PageProcessor {
                 trs.forEach(tr -> {
                     String th = tr.select("th").html();
                     String td = tr.select("td").html();
-                    if(!th.equals("链接")){
-                        if(th.trim().equals("名称")){
+                    if (!th.equals("链接")) {
+                        if (th.trim().equals("名称")) {
                             System.out.println("英文译名->" + td);
                             hpo.setNameEn(td);
-                        }else if (th.trim().equals("定义")){
+                        } else if (th.trim().equals("定义")) {
                             System.out.println("英文定义->" + td);
                             hpo.setDefinitionEn(td);
-                        }else if (th.trim().equals("中文译名")){
+                        } else if (th.trim().equals("中文译名")) {
                             System.out.println("中文译名->" + td);
                             hpo.setNameZh(td);
-                        } else if (th.trim().equals("中文定义")){
+                        } else if (th.trim().equals("中文定义")) {
                             System.out.println("中文定义->" + td);
                             hpo.setDefinitionZh(td);
                         }
@@ -73,7 +73,7 @@ public class EpidemicUrlDataProcessor implements PageProcessor {
                 hpos.add(hpo);
             });
         }
-        page.putField("hpos",hpos);
+        page.putField("hpos", hpos);
     }
 
     /**
@@ -81,7 +81,7 @@ public class EpidemicUrlDataProcessor implements PageProcessor {
      */
     public static void main(String[] args) {
         List<String> hpos = HPOConfig.hpos;
-        for (String hpo : hpos){
+        for (String hpo : hpos) {
             Spider spider = Spider.create(new EpidemicUrlDataProcessor());
             spider.addUrl(hpos.get(0));
             spider.addPipeline(new DataPipeline());

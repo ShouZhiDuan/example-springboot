@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ReBushuTestController {
 
     @GetMapping("/tools")
-    public Object test(){
+    public Object test() {
         return "777666";
     }
 

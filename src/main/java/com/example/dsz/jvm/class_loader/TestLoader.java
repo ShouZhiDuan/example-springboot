@@ -11,7 +11,7 @@ public class TestLoader {
         System.out.println("我是TestLoader的main函数！");
     }
 
-    public void testDo(){
+    public void testDo() {
         System.out.println("我是TestLoader的testDo函数！");
     }
 

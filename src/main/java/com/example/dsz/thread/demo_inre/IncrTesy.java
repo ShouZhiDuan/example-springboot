@@ -7,10 +7,10 @@ package com.example.dsz.thread.demo_inre;
  */
 public class IncrTesy {
     public static void main(String[] args) {
-          for(int i = 0; i <= 9999; i++){
-              new Thread(() -> {
-                  IncDemo.incr();
-              }).start();
-          }
+        for (int i = 0; i <= 9999; i++) {
+            new Thread(() -> {
+                IncDemo.incr();
+            }).start();
+        }
     }
 }

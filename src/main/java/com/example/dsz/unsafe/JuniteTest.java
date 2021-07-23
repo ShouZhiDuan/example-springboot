@@ -17,11 +17,11 @@ public class JuniteTest {
 //         this.a = a;
 //    }
 
-    public JuniteTest(){
+    public JuniteTest() {
     }
 
     @Test
-    public void testDo(){
+    public void testDo() {
         UnsafeUtil offHeapArray = new UnsafeUtil(4);
         offHeapArray.set(0, 1);
         offHeapArray.set(1, 2);

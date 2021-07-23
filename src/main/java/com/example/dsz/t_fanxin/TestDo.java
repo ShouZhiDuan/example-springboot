@@ -10,17 +10,12 @@ import lombok.Data;
 @Data
 public class TestDo {
 
-    protected  int age;
+    protected int age;
 
-    private void test(){
+    private void test() {
         Ttest1 ttest1 = new Ttest1();
         Ttest1.Animals animals = new Ttest1.Animals();
     }
-
-
-
-
-
 
 
 }

@@ -29,7 +29,7 @@ public class BeanCopy {
         copy2.setName("test-new");
 
         //BeanUtils.copyProperties(copy2,copy1);
-        DszBeanUtils.copyPropertiesIgnoreNull(copy2,copy1);
+        DszBeanUtils.copyPropertiesIgnoreNull(copy2, copy1);
         System.out.println();
 
     }

@@ -10,11 +10,12 @@ import lombok.Data;
 @Data
 public class TestInner {
 
-    private int age=10;
+    private int age = 10;
 
-    class Inner{
-        private int age=20;
-        private void testDo(){
+    class Inner {
+        private int age = 20;
+
+        private void testDo() {
             int age = 30;
             System.out.println(age);
             System.out.println(this.age);
@@ -26,7 +27,6 @@ public class TestInner {
         TestInner.Inner inner = new TestInner().new Inner();
         inner.testDo();
     }
-
 
 
 }

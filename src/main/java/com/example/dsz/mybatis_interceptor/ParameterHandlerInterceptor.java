@@ -27,15 +27,15 @@ import java.util.Properties;
 @Slf4j
 @Intercepts(value = {
         @Signature(type = ParameterHandler.class, method = "getParameterObject", args = {}),
-        @Signature(type = ParameterHandler.class, method = "setParameters", args = { PreparedStatement.class })
+        @Signature(type = ParameterHandler.class, method = "setParameters", args = {PreparedStatement.class})
 })
 public class ParameterHandlerInterceptor implements Interceptor {
-    
+
     private final String PARAM_KEY = "name";
 
     /**
-     *  SQL执行参数处理
-     *  to see https://blog.csdn.net/yangbo787827967/article/details/81562476
+     * SQL执行参数处理
+     * to see https://blog.csdn.net/yangbo787827967/article/details/81562476
      */
     @Override
     public Object intercept(Invocation invocation) throws Throwable {
@@ -115,7 +115,7 @@ public class ParameterHandlerInterceptor implements Interceptor {
 
     @Override
     public Object plugin(Object target) {
-        return Plugin.wrap(target,this);
+        return Plugin.wrap(target, this);
     }
 
     @Override

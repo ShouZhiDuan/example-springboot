@@ -10,50 +10,50 @@ import org.slf4j.LoggerFactory;
 public class ParamUtils {
     private static final Logger logger = LoggerFactory.getLogger(ParamUtils.class);
 
-    public static JSONObject stringToJSONObject(String param){
+    public static JSONObject stringToJSONObject(String param) {
         JSONObject ret = null;
-        try{
-            if(param != null && param.length()>0){
+        try {
+            if (param != null && param.length() > 0) {
                 JSONObject jsonObject = JSON.parseObject(param);
-                if(jsonObject != null && !jsonObject.isEmpty()){
+                if (jsonObject != null && !jsonObject.isEmpty()) {
                     ret = jsonObject;
                 }
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             String error = e.getMessage();
             logger.error(error);
         }
         return ret;
     }
 
-    public static String jsonobjectToString(JSONObject jsonObject){
-        if(jsonObject != null && !jsonObject.isEmpty()){
+    public static String jsonobjectToString(JSONObject jsonObject) {
+        if (jsonObject != null && !jsonObject.isEmpty()) {
             return jsonObject.toString();
         }
-        return  null;
+        return null;
     }
 
-    public static Object stringToObject(String str){
+    public static Object stringToObject(String str) {
         Object ret = null;
-        try{
+        try {
             Object tmp = JSON.parseObject(str);
-            if(tmp != null){
+            if (tmp != null) {
                 ret = tmp;
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             logger.error(e.getMessage());
         }
         return ret;
     }
 
-    public static String objectToString(Object obj){
+    public static String objectToString(Object obj) {
         String ret = null;
-        try{
+        try {
             String tmp = JSON.toJSONString(obj);
-            if(tmp != null){
+            if (tmp != null) {
                 ret = tmp;
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             logger.error(e.getMessage());
         }
         return ret;

@@ -30,22 +30,21 @@ public class MyBatisTypeHandlerController {
     private TestService testService;
 
     @GetMapping("/handler")
-    public void test(){
+    public void test() {
         List<DszTest> dszTests = dszTestMapper.selectAll();
         System.out.println(JSON.toJSONString(dszTests));
     }
 
     @GetMapping("/handler1")
-    public Object test1(){
-         return testService.queryTest();
+    public Object test1() {
+        return testService.queryTest();
     }
 
     @GetMapping("/handler2")
-    public void test2(){
+    public void test2() {
         DszTest dszTest = dszTestMapper.selectByPrimaryKey(1);
         System.out.println(JSON.toJSONString(dszTest));
     }
-
 
 
 }

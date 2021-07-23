@@ -16,12 +16,12 @@ public class MainTest1 {
 
 
         TreeMap<Object, Object> objectObjectTreeMap = new TreeMap<>();
-        objectObjectTreeMap.put(1,"a");
-        objectObjectTreeMap.put(3,"b");
-        objectObjectTreeMap.put(2,"c");
+        objectObjectTreeMap.put(1, "a");
+        objectObjectTreeMap.put(3, "b");
+        objectObjectTreeMap.put(2, "c");
 
         Set<Map.Entry<Object, Object>> entries = objectObjectTreeMap.entrySet();
-        for (Map.Entry<Object, Object> entry : entries){
+        for (Map.Entry<Object, Object> entry : entries) {
             System.out.println(entry.getKey());
         }
 
@@ -32,7 +32,7 @@ public class MainTest1 {
                 return 0;
             }
         });
-        Collections.sort(new ArrayList(),new Comparator<Object>() {
+        Collections.sort(new ArrayList(), new Comparator<Object>() {
             @Override
             public int compare(Object o1, Object o2) {
                 return 0;
@@ -45,7 +45,7 @@ public class MainTest1 {
         objects.add(3);
         objects.add(2);
         objects.sort((Integer t1, Integer t2) -> {
-            return  t1-t2;
+            return t1 - t2;
         });
         System.out.println();
     }

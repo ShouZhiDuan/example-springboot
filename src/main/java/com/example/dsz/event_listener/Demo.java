@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 public class Demo {
     private int age = 10;
     private String name = "shouzhi.duan";
+
     public Demo() {
     }
 }

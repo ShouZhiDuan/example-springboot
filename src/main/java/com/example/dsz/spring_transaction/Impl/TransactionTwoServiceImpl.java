@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class TransactionTwoServiceImpl implements TransactionTwoService {
 
     @Override
-    @Transactional(propagation=Propagation.MANDATORY)
+    @Transactional(propagation = Propagation.MANDATORY)
     public void test2() {
         System.out.println("@Transactional(propagation=Propagation.MANDATORY)");
     }

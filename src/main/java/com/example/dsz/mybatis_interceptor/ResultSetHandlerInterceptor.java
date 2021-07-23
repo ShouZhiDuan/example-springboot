@@ -6,6 +6,7 @@ import org.apache.ibatis.executor.resultset.DefaultResultSetHandler;
 import org.apache.ibatis.executor.resultset.ResultSetHandler;
 import org.apache.ibatis.mapping.MappedStatement;
 import org.apache.ibatis.plugin.*;
+
 import java.lang.reflect.Field;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -20,7 +21,7 @@ import java.util.Properties;
  */
 
 @Slf4j
-@Intercepts({ @Signature(type = ResultSetHandler.class, method = "handleResultSets", args = { Statement.class }) })
+@Intercepts({@Signature(type = ResultSetHandler.class, method = "handleResultSets", args = {Statement.class})})
 public class ResultSetHandlerInterceptor implements Interceptor {
 
     /**
@@ -34,20 +35,20 @@ public class ResultSetHandlerInterceptor implements Interceptor {
         field.setAccessible(true);
         MappedStatement mappedStatement = (MappedStatement) field.get(defaultResultSetHandler);
         Class<?> type = mappedStatement.getResultMaps().get(0).getType();
-        if(type.getName().equals(ExperimentExecutionDataViewVO.class.getName())){
+        if (type.getName().equals(ExperimentExecutionDataViewVO.class.getName())) {
             //返回的结果集
             List<ExperimentExecutionDataViewVO> dataViewVOList = new ArrayList<>();
             Object[] args = invocation.getArgs();
             Statement stmt = (Statement) args[0];
             ResultSet resultSet = stmt.getResultSet();
-            if(resultSet != null){
+            if (resultSet != null) {
                 while (resultSet.next()) {
                     //类似原生JDBC处理
                     dataViewVOList.add(new ExperimentExecutionDataViewVO());
                 }
             }
             return dataViewVOList;
-        }else {
+        } else {
             return invocation.proceed();
         }
     }
@@ -58,6 +59,7 @@ public class ResultSetHandlerInterceptor implements Interceptor {
     }
 
     @Override
-    public void setProperties(Properties properties) { }
+    public void setProperties(Properties properties) {
+    }
 
 }

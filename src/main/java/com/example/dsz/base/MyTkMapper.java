@@ -5,6 +5,7 @@ import tk.mybatis.mapper.common.ConditionMapper;
 import tk.mybatis.mapper.common.ExampleMapper;
 import tk.mybatis.mapper.common.IdsMapper;
 import tk.mybatis.mapper.common.special.InsertListMapper;
+
 /**
  * @Auther: ShouZhi@Duan
  * @Date: 2020/11/26 15:51

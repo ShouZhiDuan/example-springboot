@@ -13,7 +13,7 @@ public class Worker {
 
     private String name;
 
-    public static void printf(Worker worker){
+    public static void printf(Worker worker) {
         // 查看对象的整体结构信息 // JOL工具类
         System.out.println(ClassLayout.parseInstance(worker).toPrintable());
     }

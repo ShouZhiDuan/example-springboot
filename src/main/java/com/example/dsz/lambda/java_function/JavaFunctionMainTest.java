@@ -13,23 +13,22 @@ public class JavaFunctionMainTest {
     /**
      * Function
      */
-    public static String testFunction(String a,Function<String,String> function) {
-        return   function.apply(a);
+    public static String testFunction(String a, Function<String, String> function) {
+        return function.apply(a);
     }
 
     /**
      * Predicate
      */
-    public static boolean testPredict(String targ){
-        Predicate<String> predicate =  a -> a.startsWith("2");
+    public static boolean testPredict(String targ) {
+        Predicate<String> predicate = a -> a.startsWith("2");
         return predicate.test(targ);
     }
 
 
-
     public static void main(String[] args) {
-        System.out.println(testFunction("apply", a->a+"c"));
-        Function function =  a -> a+"test";
+        System.out.println(testFunction("apply", a -> a + "c"));
+        Function function = a -> a + "test";
         System.out.println(function.apply("Hello "));
         System.out.println(testPredict("2666666"));
     }

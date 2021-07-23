@@ -25,7 +25,7 @@ public class UnsafeUtil {
         try {
             Field theUnsafe = Unsafe.class.getDeclaredField("theUnsafe");
             theUnsafe.setAccessible(true);
-            unsafe  = (Unsafe) theUnsafe.get(null);
+            unsafe = (Unsafe) theUnsafe.get(null);
         } catch (NoSuchFieldException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
@@ -46,14 +46,17 @@ public class UnsafeUtil {
     public int get(long i) {
         return unsafe.getInt(address + i * INT);
     }
+
     // 设置指定索引处的元素
     public void set(long i, int value) {
         unsafe.putInt(address + i * INT, value);
     }
+
     // 元素个数
     public long size() {
         return size;
     }
+
     // 释放堆外内存
     public void freeMemory() {
         unsafe.freeMemory(address);

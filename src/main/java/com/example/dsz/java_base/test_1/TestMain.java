@@ -9,15 +9,17 @@ import com.example.dsz.java_base.PublicTest;
  */
 public class TestMain {
     PublicTest publicTest = new PublicTest();
-    private class Test{
+
+    private class Test {
 
     }
-    class Test1{
+
+    class Test1 {
 
     }
 
     public static void main(String[] args) {
-         class Test{
+        class Test {
 
         }
 

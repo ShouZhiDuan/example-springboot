@@ -27,11 +27,11 @@ public class WebMagicController {
     private DataPipeline dataPipeline;
 
     @GetMapping("queryHpos")
-    public Object queryHpos(){
+    public Object queryHpos() {
         int i = 0;
         long startTime = System.currentTimeMillis();
         List<String> hpos = HPOConfig.hpos;
-        for (String hpo : hpos){
+        for (String hpo : hpos) {
             Spider spider = Spider.create(epidemicUrlDataProcessor);
             spider.addUrl(hpo);
             spider.addPipeline(dataPipeline);
@@ -41,7 +41,7 @@ public class WebMagicController {
             spider.stop();
         }
         long endTime = System.currentTimeMillis();
-        return "消耗时间" + (endTime - startTime)/1000 + "秒";
+        return "消耗时间" + (endTime - startTime) / 1000 + "秒";
     }
 
 }

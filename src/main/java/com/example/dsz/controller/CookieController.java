@@ -19,10 +19,10 @@ public class CookieController {
 
 
     @GetMapping("/testRequest")
-    public Object testRequest(HttpServletRequest request, HttpServletResponse response){
-        Cookie[]  cookies = request.getCookies();
-        if(null != cookies){
-            for (Cookie cookie : cookies){
+    public Object testRequest(HttpServletRequest request, HttpServletResponse response) {
+        Cookie[] cookies = request.getCookies();
+        if (null != cookies) {
+            for (Cookie cookie : cookies) {
                 System.out.println("name = " + cookie.getName() + " & value = " + cookie.getValue());
             }
             return cookies;
@@ -31,16 +31,14 @@ public class CookieController {
     }
 
     @GetMapping("/testResponse")
-    public Object testResponse(HttpServletRequest request, HttpServletResponse response){
-        Cookie cookie =new Cookie("dsz", "18");
+    public Object testResponse(HttpServletRequest request, HttpServletResponse response) {
+        Cookie cookie = new Cookie("dsz", "18");
         cookie.setMaxAge(30);//设置失效时间
         response.addCookie(cookie);//设置响应出去的cookie
         cookie.setPath("/");//设置同一个Tomcat服务器中部署，了多个web项目，那么这些web项目的cookie能共享。
         cookie.setDomain(".baidu.com");//那么所有的*.baidu.com
         return cookie;
     }
-
-
 
 
 }

@@ -21,7 +21,7 @@ public class Person {
         System.out.println("un static block");
     }
 
-    static  {
+    static {
         //实例化或者初始化的时候都会被加载
         System.out.println("is static block");
     }
@@ -113,13 +113,13 @@ public class Person {
 //        System.out.println("s1 == s3? " + (s1 == s3)); // true
 //        System.out.println(s1.equals(s2));
 
-        final  int a = 0;
+        final int a = 0;
         Integer it1 = 100;
         Integer it2 = 100;
         Integer it3 = new Integer(100);
 
-        System.out.println(it1==it2);
-        System.out.println(it1==it3);
+        System.out.println(it1 == it2);
+        System.out.println(it1 == it3);
 
 
     }

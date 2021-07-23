@@ -15,7 +15,7 @@ public class SpiMainTest {
     public static void main(String[] args) {
         ServiceLoader<SpiService> load = ServiceLoader.load(SpiService.class);
         Iterator<SpiService> iterator = load.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             iterator.next().syaHello();
         }
     }

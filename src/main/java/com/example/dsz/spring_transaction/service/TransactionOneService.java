@@ -7,6 +7,7 @@ package com.example.dsz.spring_transaction.service;
  */
 public interface TransactionOneService {
     void test1();
+
     void test2();
 
     void test3();

@@ -5,7 +5,7 @@ package com.example.dsz.jvm.do_test;
  * @Date: 2021/1/7 11:20
  * @Description:
  */
-public class JvmTestDo implements JvmInterface{
+public class JvmTestDo implements JvmInterface {
 
     private String privateName = "privateName";
     public int intB = 1;
@@ -19,7 +19,7 @@ public class JvmTestDo implements JvmInterface{
     public final static String finalStaticString = "finalStaticString";
 
 
-    static void testDo(int b){
+    static void testDo(int b) {
         int c;
         c = intC + 1;
         System.out.println(c);
@@ -27,7 +27,7 @@ public class JvmTestDo implements JvmInterface{
     }
 
     public static void main(String[] args) {
-          testDo(6);
+        testDo(6);
     }
 
     @Override

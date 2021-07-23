@@ -7,10 +7,8 @@ package com.example.dsz.enums;
  */
 public enum GlobalExceptionCodeEnum {
 
-    TOKEN_EXCEPTION_CODE(401,"token已过期"),
-    PARAMS_VALIDATED_CODE(5003,"参数校验异常消息")
-
-    ;
+    TOKEN_EXCEPTION_CODE(401, "token已过期"),
+    PARAMS_VALIDATED_CODE(5003, "参数校验异常消息");
 
     private Integer code;
     private String msg;
@@ -19,12 +17,15 @@ public enum GlobalExceptionCodeEnum {
         this.code = code;
         this.msg = msg;
     }
+
     public Integer getCode() {
         return code;
     }
+
     public String getMsg() {
         return msg;
     }
+
     public void setCode(Integer code) {
         this.code = code;
     }

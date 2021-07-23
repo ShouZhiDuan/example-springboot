@@ -37,11 +37,12 @@ public class UnsafeMainTest {
     }
 
     @Data
-    static class User{
-          public int a;
-          User(int a){
-              this.a = 10;
-          }
+    static class User {
+        public int a;
+
+        User(int a) {
+            this.a = 10;
+        }
     }
 
     @Test
@@ -49,8 +50,8 @@ public class UnsafeMainTest {
         Counter counter = new Counter();
         ExecutorService threadPool = Executors.newFixedThreadPool(100);
         IntStream.range(0, 100)// 起100个线程，每个线程自增10000次
-                .forEach(i->threadPool.submit(
-                        ()->IntStream.range(0, 10000).forEach(j->counter.increment()))
+                .forEach(i -> threadPool.submit(
+                        () -> IntStream.range(0, 10000).forEach(j -> counter.increment()))
                 );
         threadPool.shutdown();
         Thread.sleep(2000);
@@ -58,10 +59,11 @@ public class UnsafeMainTest {
         System.out.println(counter.getCount());
     }
 
-    static class Counter{
+    static class Counter {
         private volatile int count = 0;
         private static long offset;
         private static Unsafe unsafe;
+
         static {
             try {
                 Field f = Unsafe.class.getDeclaredField("theUnsafe");
@@ -75,6 +77,7 @@ public class UnsafeMainTest {
                 e.printStackTrace();
             }
         }
+
         public void increment() {
             int before = count;
             // 失败了就重试直到成功为止
@@ -82,12 +85,11 @@ public class UnsafeMainTest {
                 before = count;
             }
         }
+
         public int getCount() {
             return count;
         }
     }
-
-
 
 
 }

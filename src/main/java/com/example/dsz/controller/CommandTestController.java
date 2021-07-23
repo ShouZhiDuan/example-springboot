@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,18 +22,16 @@ public class CommandTestController {
 
     @GetMapping("/run")
     public Object runCommand() throws IOException {
-        String[] cmdCpu = {"bash","test.sh"};
+        String[] cmdCpu = {"bash", "test.sh"};
         ProcessBuilder builderCpu = new ProcessBuilder(cmdCpu);
         builderCpu.redirectErrorStream(true);
         Process processCpu = builderCpu.start();
         InputStream isCpu = processCpu.getInputStream();
         BufferedReader readerCpu = new BufferedReader(new InputStreamReader(isCpu));
         String date = readerCpu.readLine();
-        log.info("command执行返回结果：{}",date);
+        log.info("command执行返回结果：{}", date);
         return date;
     }
-
-
 
 
 }

@@ -14,26 +14,26 @@ import java.util.concurrent.LinkedBlockingQueue;
  */
 public class Teacher1Auth extends Thread implements IVacateAuth {
     //阻塞队列
-    LinkedBlockingQueue<Vacate> deque=new LinkedBlockingQueue<>();
+    LinkedBlockingQueue<Vacate> deque = new LinkedBlockingQueue<>();
 
     private IVacateAuth iVacateAuth;
 
-    public Teacher1Auth(IVacateAuth iVacateAuth){
+    public Teacher1Auth(IVacateAuth iVacateAuth) {
         this.iVacateAuth = iVacateAuth;
     }
 
     @SneakyThrows
     @Override
     public void run() {
-        while (true){
-              Vacate take = deque.take();
-              take.setDesc("======1号老师审批，通过======");
-              take.setTxt("======我要请假回家======");
-              take.setResult(true);
-              take.setTime(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
-              System.out.println("我的请假条：" + JSON.toJSONString(take));
-              iVacateAuth.next(take);
-          }
+        while (true) {
+            Vacate take = deque.take();
+            take.setDesc("======1号老师审批，通过======");
+            take.setTxt("======我要请假回家======");
+            take.setResult(true);
+            take.setTime(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
+            System.out.println("我的请假条：" + JSON.toJSONString(take));
+            iVacateAuth.next(take);
+        }
     }
 
     @Override

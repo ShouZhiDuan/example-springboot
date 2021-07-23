@@ -6,17 +6,18 @@ package com.example.dsz.lambda;
  * @Date: 2021/1/12 16:11
  * @Description:
  */
-public class LambdaMainTest extends LambdaMainSuper{
+public class LambdaMainTest extends LambdaMainSuper {
 
     private static int a;
 
     private int b;
 
-    private final  LambdaMainTest test = new LambdaMainTest();
+    private final LambdaMainTest test = new LambdaMainTest();
 
     {
         System.out.println("子类-实例构造器");
     }
+
     static {
         System.out.println("子类-类构造器");
     }
@@ -26,7 +27,7 @@ public class LambdaMainTest extends LambdaMainSuper{
     }
 
     public static void main(String[] args) {
-          new LambdaMainTest();
+        new LambdaMainTest();
     }
 
 

@@ -18,14 +18,15 @@
         <result column="age" property="age" jdbcType="INTEGER"/>
         <result column="addr" property="addr" jdbcType="VARCHAR"/>
         <result column="tes" property="tes" jdbcType="VARCHAR"/>
-        <result column="status" property="status"  typeHandler="com.example.dsz.mybatis.type_handler.StatusHandler"/>
+        <result column="status" property="status" typeHandler="com.example.dsz.mybatis.type_handler.StatusHandler"/>
         <association property="school" javaType="com.example.dsz.model.School2">
             <id column="id" property="schoolId"/>
             <result column="school_name" property="schoolName"/>
         </association>
     </resultMap>
     <select id="queryDetailsById" parameterType="int" resultMap="dszWithSchool">
-         select dt.*,sc.id schoolId,sc.school_name from dsz_test dt left join school sc on sc.id = dt.school_id where dt.id = #{id}
+        select dt.*,sc.id schoolId,sc.school_name from dsz_test dt left join school sc on sc.id = dt.school_id where
+        dt.id = #{id}
     </select>
 
 
@@ -36,27 +37,26 @@
         <result column="age" property="age" jdbcType="INTEGER"/>
         <result column="addr" property="addr" jdbcType="VARCHAR"/>
         <result column="tes" property="tes" jdbcType="VARCHAR"/>
-        <result column="status" property="status"  typeHandler="com.example.dsz.mybatis.type_handler.StatusHandler"/>
-        <association property="school" column="school_id" javaType="com.example.dsz.model.School2" select="selectSchool"/>
+        <result column="status" property="status" typeHandler="com.example.dsz.mybatis.type_handler.StatusHandler"/>
+        <association property="school" column="school_id" javaType="com.example.dsz.model.School2"
+                     select="selectSchool"/>
     </resultMap>
     <select id="queryDetailsById2" parameterType="int" resultMap="dszWithSchoolAsync" flushCache="true">
-        select dt.* from dsz_test dt  where dt.id = #{id}
+        select dt.* from dsz_test dt where dt.id = #{id}
     </select>
     <select id="selectSchool" parameterType="int" resultType="com.example.dsz.model.School2">
-        select id schoolId,school_name schoolName from school where  id = #{school_id}
+        select id schoolId,school_name schoolName from school where id = #{school_id}
     </select>
-
 
 
     <select id="queryOneById" resultType="com.example.dsz.model.School2">
-             select  id schoolId,school_name schoolName from  school where  id = #{id} and id = #{id2}
+        select id schoolId,school_name schoolName from school where id = #{id} and id = #{id2}
     </select>
 
 
     <select id="queryOneByObject" resultType="com.example.dsz.model.School2">
-             select  id schoolId,school_name schoolName from  school where  id = #{param.schoolId}
+        select id schoolId,school_name schoolName from school where id = #{param.schoolId}
     </select>
-
 
 
 </mapper>

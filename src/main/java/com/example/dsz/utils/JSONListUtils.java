@@ -13,13 +13,13 @@ import java.util.List;
  */
 public class JSONListUtils {
 
-    private  static  final ObjectMapper MAPPER = new ObjectMapper();
+    private static final ObjectMapper MAPPER = new ObjectMapper();
 
     /**
      * 字符串转List
      */
-    public static <T> T  stringToList(String jsonStr, Class<T> beanType) throws IOException {
-       // return MAPPER.readValue(jsonStr,new TypeReference<List<beanType>>(){});
+    public static <T> T stringToList(String jsonStr, Class<T> beanType) throws IOException {
+        // return MAPPER.readValue(jsonStr,new TypeReference<List<beanType>>(){});
         return null;
     }
 
