@@ -31,7 +31,6 @@ public class DemoTestSpringbootApplication {
 //        TimeTest.sayHello2("sayHello2");
         log.info("主程序参数列表：" + JSON.toJSONString(args));
         //ConfigurableApplicationContext run = SpringApplication.run(DemoTestSpringbootApplication.class, args);
-
         /**
          * Environment操作
          */
