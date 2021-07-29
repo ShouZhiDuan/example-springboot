@@ -1,0 +1,3194 @@
+[
+  {
+    "qId": "name",
+    "qName": "患者姓名缩写",
+    "type": "3",
+    "aswer": [],
+    "value": "ZJFA"
+  },
+  {
+    "qId": "date",
+    "qName": "填写日期",
+    "type": "4",
+    "aswer": [],
+    "value": "2021-06-10"
+  },
+  {
+    "qId": "isDanger",
+    "qName": "患者临床诊断为结直肠恶性肿瘤",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "isCenter",
+    "qName": "患者是否为门诊收入院并拟行肿瘤相关限期手术治疗",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "isAgree",
+    "qName": "患者已签署知情同意书",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "1",
+    "qName": "患者年龄（至手术当天）",
+    "type": "3",
+    "aswer": [],
+    "value": "63"
+  },
+  {
+    "qId": "2",
+    "qName": "患者性别",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "男",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "3",
+    "qName": "民族",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "汉族",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "4",
+    "qName": "身高(cm)",
+    "type": "3",
+    "aswer": [],
+    "value": "175"
+  },
+  {
+    "qId": "5",
+    "qName": "体重(kg)",
+    "type": "3",
+    "aswer": [],
+    "value": "80"
+  },
+  {
+    "qId": "6",
+    "qName": "入院日期",
+    "type": "4",
+    "aswer": [],
+    "value": "2021-06-07"
+  },
+  {
+    "qId": "7",
+    "qName": "WHO一般状况评分",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "肿瘤症状轻微，可以行走、从事轻体力活动、坐着工作，不能承受重体力活动",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "8",
+    "qName": "Caprini评分（入院）",
+    "type": "3",
+    "aswer": [],
+    "value": "5"
+  },
+  {
+    "qId": "9",
+    "qName": "下肢静脉曲张病史",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "10",
+    "qName": "冠心病或脑血管病",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "10a1",
+    "qName": "如果是，是否做过介入手术",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "11",
+    "qName": "高血压",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "12",
+    "qName": "慢性心功能不全",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "13",
+    "qName": "慢性肺部疾病（COPD、支气管扩张、肺动脉高压等）",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "14",
+    "qName": "糖尿病",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "14a1",
+    "qName": "如果是，干预方式为（可多选）",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "胰岛素依赖",
+        "aValue": ""
+      },
+      {
+        "aId": "1",
+        "aName": "口服药物",
+        "aValue": ""
+      },
+      {
+        "aId": "2",
+        "aName": "生活方式干预",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "15",
+    "qName": "其他部位（除腹部）实体肿瘤 ",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "16",
+    "qName": "血液系统肿瘤 ",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "17",
+    "qName": "肾功能不全",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "18",
+    "qName": "肝功能不全",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "19",
+    "qName": "吸烟",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "19a1",
+    "qName": "如果是，则吸烟年份时长",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "20",
+    "qName": "患者既往做过手术（不包括门诊手术、介入手术及美容手术）",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "20a1",
+    "qName": "如果是，是否为肿瘤切除手术",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "20a2",
+    "qName": "既往手术详情",
+    "type": "3",
+    "aswer": [],
+    "value": "阑尾切除术:2年"
+  },
+  {
+    "qId": "21",
+    "qName": "既往静脉血栓栓塞症史（含深静脉血栓栓塞和/或肺栓塞）",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "无",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "21a1",
+    "qName": "如果有，静脉血栓栓塞症的治疗方式为（可多选）",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "22",
+    "qName": "既往4周内是否接受抗凝剂治疗（不包括入院后预防性用药）",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "22a1",
+    "qName": "如果是，则使用药物为（可多选）",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "22a1a1",
+    "qName": "使用抗血小板药物",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "22a1a2",
+    "qName": "使用肝素类药物",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "22a2",
+    "qName": "使用时间",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "22a3",
+    "qName": "术前是否停用抗凝药物",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "22a3a1",
+    "qName": "如果是，则至手术日已停用时间",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "23",
+    "qName": "术前是否预防性接受抗凝剂治疗（不包括入院前常规用药）",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "23a1",
+    "qName": "如果是，则使用药物为（可多选）",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "23a1a1",
+    "qName": "使用抗血小板药物",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "23a1a2",
+    "qName": "使用肝素类药物",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "23a2",
+    "qName": "以上药物是否为桥接用药",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "23a3",
+    "qName": "使用时间",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "23a4",
+    "qName": "最后使用时间至手术时",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "24",
+    "qName": "既往4周内是否接受止血药物治疗",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "24a1",
+    "qName": "如果是，则使用药物为（可多选）",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "24a2",
+    "qName": "使用时间",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "24a3",
+    "qName": "术前是否停用止血药物",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "24a3a1",
+    "qName": "如果是，则至手术日已停用时间",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "25",
+    "qName": "Hb测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "130"
+      }
+    ]
+  },
+  {
+    "qId": "26",
+    "qName": "PLT测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "251"
+      }
+    ]
+  },
+  {
+    "qId": "27",
+    "qName": "ALT测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "13"
+      }
+    ]
+  },
+  {
+    "qId": "28",
+    "qName": "AST测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "18.4"
+      }
+    ]
+  },
+  {
+    "qId": "29",
+    "qName": "CCr测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "77.9"
+      }
+    ]
+  },
+  {
+    "qId": "30",
+    "qName": "CEA测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "1.66"
+      }
+    ]
+  },
+  {
+    "qId": "31",
+    "qName": "TT测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "2",
+        "aName": "未测",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "32",
+    "qName": "PT测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "12.5"
+      }
+    ]
+  },
+  {
+    "qId": "33",
+    "qName": "APTT测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "26.2"
+      }
+    ]
+  },
+  {
+    "qId": "34",
+    "qName": "INR测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "1.16"
+      }
+    ]
+  },
+  {
+    "qId": "35",
+    "qName": "FIB测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "3.36"
+      }
+    ]
+  },
+  {
+    "qId": "36",
+    "qName": "D 二聚体测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "0.23"
+      }
+    ]
+  },
+  {
+    "qId": "200",
+    "qName": "血栓弹力图是否检查",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "37",
+    "qName": "双下肢静脉彩色多普勒超声",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": ""
+      }
+    ],
+    "imagePath": "/group1/M00/00/01/rBQ-CGDCE6aAJO0DAEmfcAcYI6c722.jpg"
+  },
+  {
+    "qId": "37a1",
+    "qName": "如果是，结果为",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "2",
+        "aName": "未见血栓形成",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "37a1a1",
+    "qName": "浅静脉血栓部位",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "37a1a2",
+    "qName": "深静脉血栓部位",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "37a1a3",
+    "qName": "其他",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "38",
+    "qName": "肺血管CT造影",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "38a1",
+    "qName": "如果是，结果为",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "38a1a1",
+    "qName": "肺栓塞，部位",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "39",
+    "qName": "下肢深静脉造影",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "39a1",
+    "qName": "如果是，结果为",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "39a1a1",
+    "qName": "血栓形成，部位",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "40",
+    "qName": "结肠镜检查",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "40a1",
+    "qName": "如果是，是否有活检",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "40a1a1",
+    "qName": "如果是，活检结果为",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "2",
+        "aName": "可疑恶性",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "41",
+    "qName": "肺转移检查",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "41a1",
+    "qName": "如果是，是否已有转移",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "42",
+    "qName": "肝转移检查",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "42a1",
+    "qName": "如果是，是否已有转移 ",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "43",
+    "qName": "肿瘤症状（可多选）",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "无症状",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "44",
+    "qName": "手术日期",
+    "type": "4",
+    "aswer": [],
+    "value": "2021-06-10"
+  },
+  {
+    "qId": "45",
+    "qName": "手术时间",
+    "type": "3",
+    "aswer": [],
+    "value": "225"
+  },
+  {
+    "qId": "46",
+    "qName": "手术方式",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "腹腔镜",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "47",
+    "qName": "麻醉方式（可多选）",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "全身麻醉",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "48",
+    "qName": "麻醉时间",
+    "type": "3",
+    "aswer": [],
+    "value": "280"
+  },
+  {
+    "qId": "49",
+    "qName": "术中出血",
+    "type": "3",
+    "aswer": [],
+    "value": "50"
+  },
+  {
+    "qId": "50",
+    "qName": "术中输血",
+    "type": "3",
+    "aswer": [],
+    "value": "0"
+  },
+  {
+    "qId": "57",
+    "qName": "Caprini评分（术后24小时内）",
+    "type": "3",
+    "aswer": [],
+    "value": "11"
+  },
+  {
+    "qId": "51",
+    "qName": "使用抗凝药物",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "51a1",
+    "qName": "如果是，则使用药物为（可多选）",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "5",
+        "aName": "肝素类药物",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "51a1a1",
+    "qName": "使用抗血小板药物",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "51a1a2",
+    "qName": "使用肝素类药物",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "2",
+        "aName": "低分子肝素",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "51a2",
+    "qName": "如果是，则开始使用时间为术后",
+    "type": "3",
+    "aswer": [],
+    "value": "1"
+  },
+  {
+    "qId": "51a3",
+    "qName": "使用时间为",
+    "type": "3",
+    "aswer": [],
+    "value": "6"
+  },
+  {
+    "qId": "52",
+    "qName": "使用器械预防",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "52a1",
+    "qName": "如果是，使用器械为（可多选）",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "53",
+    "qName": "术后开始下地活动时间为术后",
+    "type": "3",
+    "aswer": [],
+    "value": "NA"
+  },
+  {
+    "qId": "54",
+    "qName": "腹腔、盆腔引流量（mL）",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "55",
+    "qName": "术后是否有异常出血",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "55a1",
+    "qName": "如果是，出血部位为（可多选）",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "55a2",
+    "qName": "出血量为",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "55a3",
+    "qName": "出血时间发生于术后",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "55a4",
+    "qName": "出血时间持续天数",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "55a5",
+    "qName": "是否输血 ",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "55a5a1",
+    "qName": "如果是，输血量为",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "55a6",
+    "qName": "是否使用止血药物",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "55a6a1",
+    "qName": "如果是，则使用药物为（可多选）",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "55a6a2",
+    "qName": "如果是，则开始使用时间为术后",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "55a6a3",
+    "qName": "使用时间为",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "155",
+    "qName": "术后是否预防性使用止血药物",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "155a1",
+    "qName": "应用止血药物种类",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "155a2",
+    "qName": "如果是，则开始使用时间为术后",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "155a3",
+    "qName": "使用时间为",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "56",
+    "qName": "术后深静脉置管",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "56a1",
+    "qName": "如果是，置管部位为（可多选）",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "56a2",
+    "qName": "留置时间为",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "56a3",
+    "qName": "置管并发症为（可多选）",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "58",
+    "qName": "下肢有无疼痛",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "无",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "58a1",
+    "qName": "左肢还是右肢",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "59",
+    "qName": "下肢有无肿胀",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "无",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "59a1",
+    "qName": "左肢还是右肢",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "60",
+    "qName": "有无胸闷",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "无",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "61",
+    "qName": "有无胸痛",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "无",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "62",
+    "qName": "有无突发不明原因烦躁",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "无",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "63",
+    "qName": "有无呼吸困难",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "无",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "64",
+    "qName": "有无心慌",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "无",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "65",
+    "qName": "有无咯血",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "无",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "66",
+    "qName": "有无心动过速",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "无",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "67",
+    "qName": "有无下肢压痛",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "无",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "67a1",
+    "qName": "左肢还是右肢",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "68",
+    "qName": "有无Homans征",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "无",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "68a1",
+    "qName": "左还是右",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "69",
+    "qName": "有无Neuhof征",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "无",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "69a1",
+    "qName": "左还是右",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "70",
+    "qName": "Hb测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": "128"
+      }
+    ]
+  },
+  {
+    "qId": "71",
+    "qName": "PLT测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "251"
+      }
+    ]
+  },
+  {
+    "qId": "72",
+    "qName": "ALT测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "18"
+      }
+    ]
+  },
+  {
+    "qId": "73",
+    "qName": "AST测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "20.6"
+      }
+    ]
+  },
+  {
+    "qId": "74",
+    "qName": "CCr测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "72"
+      }
+    ]
+  },
+  {
+    "qId": "75",
+    "qName": "CEA测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "2",
+        "aName": "未测",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "76",
+    "qName": "TT测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "2",
+        "aName": "未测",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "77",
+    "qName": "PT测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "12.8"
+      }
+    ]
+  },
+  {
+    "qId": "78",
+    "qName": "APTT测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "29.6"
+      }
+    ]
+  },
+  {
+    "qId": "79",
+    "qName": "INR测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "1.19"
+      }
+    ]
+  },
+  {
+    "qId": "80",
+    "qName": "FIB测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": "5.98"
+      }
+    ]
+  },
+  {
+    "qId": "81",
+    "qName": "D 二聚体测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": "2.23"
+      }
+    ]
+  },
+  {
+    "qId": "201",
+    "qName": "血栓弹力图是否检查",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "82",
+    "qName": "双下肢静脉彩色多普勒超声",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": ""
+      }
+    ],
+    "imagePath": "/group1/M00/00/01/rBQ-CGDQWO2APFcOAAG41zQxsi4077.jpg"
+  },
+  {
+    "qId": "82a1",
+    "qName": "如果是，结果为",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "2",
+        "aName": "未见血栓形成",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "82a1a1",
+    "qName": "浅静脉血栓部位",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "82a1a2",
+    "qName": "深静脉血栓部位",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "82a1a3",
+    "qName": "其他（具体部位）",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "83",
+    "qName": "肺血管CT造影",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "83a1",
+    "qName": "如果是，结果为",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "83a1a1",
+    "qName": "肺栓塞部位",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "84",
+    "qName": "下肢深静脉造影",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "84a1",
+    "qName": "如果是，结果为",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "84a1a1",
+    "qName": "血栓形成部位",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "140",
+    "qName": "是否确诊VTE",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "140a1",
+    "qName": "确诊时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "141",
+    "qName": "VTE治疗科室",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "142",
+    "qName": "是否接受血栓相关治疗",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "142a1",
+    "qName": "抗血栓治疗措施",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "142a1a1",
+    "qName": "药物种类",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "142a1a1a1",
+    "qName": "阿司匹林剂量（数量和单位）",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a2",
+    "qName": "阿司匹林频次",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a3",
+    "qName": "阿司匹林起始用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a4",
+    "qName": "阿司匹林终止用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a5",
+    "qName": "普通肝素剂量（数量和单位）",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a6",
+    "qName": "普通肝素频次",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a7",
+    "qName": "普通肝素起始用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a8",
+    "qName": "普通肝素终止用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a9",
+    "qName": "低分子肝素剂量（数量和单位）",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a10",
+    "qName": "低分子肝素频次",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a11",
+    "qName": "低分子肝素起始用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a12",
+    "qName": "低分子肝素终止用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a13",
+    "qName": "磺达肝癸钠剂量（数量和单位）",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a14",
+    "qName": "磺达肝癸钠频次",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a15",
+    "qName": "磺达肝癸钠起始用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a16",
+    "qName": "磺达肝癸钠终止用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a17",
+    "qName": "华法林剂量（数量和单位）",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a18",
+    "qName": "华法林频次",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a19",
+    "qName": "华法林起始用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a20",
+    "qName": "华法林终止用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a21",
+    "qName": "直接口服抗凝药物剂量（数量和单位）",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a22",
+    "qName": "直接口服抗凝药物频次",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a23",
+    "qName": "直接口服抗凝药物起始用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a24",
+    "qName": "直接口服抗凝药物终止用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a21",
+    "qName": "直接口服抗凝药物",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "142a1a1a25",
+    "qName": "其他剂量（数量和单位）",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a26",
+    "qName": "其他频次",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a27",
+    "qName": "其他起始用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a1a28",
+    "qName": "其他终止用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a2",
+    "qName": "滤器治疗",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "142a1a2a1",
+    "qName": "植入时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a2a2",
+    "qName": "取出时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "142a1a3",
+    "qName": "溶栓治疗",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "143",
+    "qName": "VTE治疗结局",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "144",
+    "qName": "肿瘤相关治疗",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "85",
+    "qName": "同期治疗用药为（可多选）",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "86",
+    "qName": "组织学类型",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "其他，具体描述",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "87",
+    "qName": "分化等级",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "4",
+        "aName": "未分化",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "88",
+    "qName": "病理T分期",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "pT0",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "89",
+    "qName": "病理N分期",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "pN0",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "90",
+    "qName": "病理M分期",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "pM0",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "91",
+    "qName": "TNM分期",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "Stage 0(Tis, N0, M0)",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "130",
+    "qName": "出院后是否继续使用抗凝药物预防VTE",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "130a1",
+    "qName": "如果是，则使用药物为（可多选）",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "130a1a1",
+    "qName": "使用抗血小板药物",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "130a1a2",
+    "qName": "使用肝素类药物",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "130a2",
+    "qName": "继续使用时间为（出院带药，不包括院内使用时间）",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "92",
+    "qName": "就诊日期",
+    "type": "4",
+    "aswer": [],
+    "value": "2021-07-06"
+  },
+  {
+    "qId": "129",
+    "qName": "出院后实际使用抗凝药物天数（出院带药，不包括院内使用时间）",
+    "type": "3",
+    "aswer": [],
+    "value": "0"
+  },
+  {
+    "qId": "93",
+    "qName": "是否有VTE相关症状或体征",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "93a1",
+    "qName": "如果是，有无心动过速",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "93a2",
+    "qName": "如果是，有无下肢压痛",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "93a2a1",
+    "qName": "左肢还是右肢",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "93a3",
+    "qName": "如果是，有无Homans征",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "93a3a1",
+    "qName": "左还是右",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "93a4",
+    "qName": "如果是，有无Neuhof征",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "93a4a1",
+    "qName": "左还是右",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "94",
+    "qName": "双下肢静脉彩色多普勒超声",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": ""
+      }
+    ],
+    "imagePath": "/group1/M00/00/02/rBQ-CGDkGWOAOSXJAEXUZyxwNzw202.jpg"
+  },
+  {
+    "qId": "94a1",
+    "qName": "如果是，结果为",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "2",
+        "aName": "未见血栓形成",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "94a1a1",
+    "qName": "浅静脉血栓部位",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "94a1a2",
+    "qName": "深静脉血栓部位",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "94a1a3",
+    "qName": "其他",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "95",
+    "qName": "肺血管CT造影",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "95a1",
+    "qName": "如果是，结果为",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "95a1a1",
+    "qName": "肺栓塞部位",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "96",
+    "qName": "下肢深静脉造影",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "96a1",
+    "qName": "如果是，结果为",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "96a1a1",
+    "qName": "血栓形成部位",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "97",
+    "qName": "是否有相关血液检查",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "202",
+    "qName": "血栓弹力图是否检查",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "98",
+    "qName": "Hb测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "2",
+        "aName": "未测",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "99",
+    "qName": "PLT测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "2",
+        "aName": "未测",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "100",
+    "qName": "ALT测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "2",
+        "aName": "未测",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "101",
+    "qName": "AST测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "2",
+        "aName": "未测",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "102",
+    "qName": "CCr测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "2",
+        "aName": "未测",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "103",
+    "qName": "CEA测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "2",
+        "aName": "未测",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "104",
+    "qName": "TT测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "2",
+        "aName": "未测",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "105",
+    "qName": "PT测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "11.2"
+      }
+    ]
+  },
+  {
+    "qId": "106",
+    "qName": "APTT测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "25.3"
+      }
+    ]
+  },
+  {
+    "qId": "107",
+    "qName": "INR测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "0.97"
+      }
+    ]
+  },
+  {
+    "qId": "108",
+    "qName": "FIB测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "1",
+        "aName": "是",
+        "aValue": "3.39"
+      }
+    ]
+  },
+  {
+    "qId": "109",
+    "qName": "D 二聚体测定值是否正常",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": "1.04"
+      }
+    ]
+  },
+  {
+    "qId": "150",
+    "qName": "是否确诊VTE",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "否",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "150a1",
+    "qName": "确诊时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "151",
+    "qName": "VTE治疗科室",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "152",
+    "qName": "是否接受血栓相关治疗",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "152a1",
+    "qName": "抗血栓治疗措施",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "152a1a1",
+    "qName": "药物种类",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "152a1a1a1",
+    "qName": "阿司匹林剂量（数量和单位）",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a2",
+    "qName": "阿司匹林频次",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a3",
+    "qName": "阿司匹林起始用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a4",
+    "qName": "阿司匹林终止用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a5",
+    "qName": "普通肝素剂量（数量和单位）",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a6",
+    "qName": "普通肝素频次",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a7",
+    "qName": "普通肝素起始用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a8",
+    "qName": "普通肝素终止用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a9",
+    "qName": "低分子肝素剂量（数量和单位）",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a10",
+    "qName": "低分子肝素频次",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a11",
+    "qName": "低分子肝素起始用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a12",
+    "qName": "低分子肝素终止用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a13",
+    "qName": "磺达肝癸钠剂量（数量和单位）",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a14",
+    "qName": "磺达肝癸钠频次",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a15",
+    "qName": "磺达肝癸钠起始用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a16",
+    "qName": "磺达肝癸钠终止用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a17",
+    "qName": "华法林剂量（数量和单位）",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a18",
+    "qName": "华法林频次",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a19",
+    "qName": "华法林起始用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a20",
+    "qName": "华法林终止用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a21",
+    "qName": "直接口服抗凝药物剂量（数量和单位）",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a22",
+    "qName": "直接口服抗凝药物频次",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a23",
+    "qName": "直接口服抗凝药物起始用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a24",
+    "qName": "直接口服抗凝药物终止用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a21",
+    "qName": "直接口服抗凝药物",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "152a1a1a25",
+    "qName": "其他剂量（数量和单位）",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a26",
+    "qName": "其他频次",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a27",
+    "qName": "其他起始用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a1a28",
+    "qName": "其他终止用药时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a2",
+    "qName": "滤器治疗",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "152a1a2a1",
+    "qName": "植入时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a2a2",
+    "qName": "取出时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "152a1a3",
+    "qName": "溶栓治疗",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "153",
+    "qName": "VTE治疗结局",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "154",
+    "qName": "肿瘤相关治疗",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "1350",
+    "qName": "有无不良事件",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "0",
+        "aName": "无",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "1350a1",
+    "qName": "有无抗凝相关事件",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "1350a1a1",
+    "qName": "抗凝相关事件",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "1350a2",
+    "qName": "有无临床手术相关不良事件",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "1350a2a1",
+    "qName": "临床手术相关不良事件",
+    "type": "2",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "1350a3",
+    "qName": "其他不良事件",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "1300",
+    "qName": "不良事件名称",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "1301",
+    "qName": "开始发生时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "1302",
+    "qName": "结束时间",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "1303",
+    "qName": "不良事件特点",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "1303a1",
+    "qName": "阵发性发作次数",
+    "type": "3",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "1304",
+    "qName": "不良事件严重程度",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "1305",
+    "qName": "与试验药物的关系",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "1306",
+    "qName": "根据研究者的判断是否符合严重不良事件定义？1.导致死亡；2.威胁生命；3.导致住院或延长住院时间；4.导致严重残疾/能力丧失；5.导致先天性异常或出生缺陷；6.重要医学事件（如有可能影响到受试者并有可能需要药物/手术以防止上述结果）",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "1306a1",
+    "qName": "报告日期",
+    "type": "4",
+    "aswer": [],
+    "value": ""
+  },
+  {
+    "qId": "1307",
+    "qName": "对试验药物采取的措施",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "1308",
+    "qName": "转归",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "1308a1",
+    "qName": "有无后遗症",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "1309",
+    "qName": "纠正治疗",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "1310",
+    "qName": "因不良事件而退出试验",
+    "type": "1",
+    "aswer": [
+      {
+        "aId": "",
+        "aName": "",
+        "aValue": ""
+      }
+    ]
+  },
+  {
+    "qId": "2000",
+    "qName": "观察医师签名",
+    "type": "3",
+    "aswer": [],
+    "value": "刘怡杉"
+  },
+  {
+    "qId": "2001",
+    "qName": "日期",
+    "type": "4",
+    "aswer": [],
+    "value": "2021-07-06"
+  }
+]
